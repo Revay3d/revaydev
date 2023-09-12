@@ -470,6 +470,10 @@ body {
 
 }
 
+.estra__contacto--links {
+    margin: 20px auto;
+
+}
 
 .estra__contacto--links--correo {
     transition: .5s;
