@@ -455,10 +455,13 @@ body {
 }
 
 
-
+.estra__contacto--links{
+    margin:4px;
+}
+    
 
 .estra__contacto--links_padre {
-    margin: 10px;
+    margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -545,12 +548,7 @@ body {
     left: 200px;
 }
 
-.extra__contacto_padre {
 
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-}
 
 
 .footer {
