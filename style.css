@@ -411,7 +411,7 @@ body {
 }
 
 .icon {
-    margin: 30px;
+    margin: 30px auto;
     align-items: center;
     text-align: center;
     display: flex;
@@ -632,8 +632,12 @@ body {
     }
 
     .proyectos__carta {
-        width: 340px;
+        width: 310px;
     }
+.proyectos__carta:hover {
+        trasform: scale(0.9);
+    }
+
 
     .mensage_superior__links {
         margin-top: 20px;
@@ -642,7 +646,7 @@ body {
 
     .sobre_mi__titulo {
         margin: 20px;
-        font-size: 60px;
+        font-size: 0;
     }
 
     .sobre_mi__descripcion {
