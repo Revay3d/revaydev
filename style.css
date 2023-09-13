@@ -632,10 +632,10 @@ body {
     }
 
     .proyectos__carta {
-        width: 310px;
+        width: 370px;
     }
 .proyectos__carta:hover {
-        trasform: scale(0.9);
+        trasform: scale(0.7);
     }
 
 
