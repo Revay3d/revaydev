@@ -632,16 +632,16 @@ body {
     }
 
     .proyectos__carta {
-        width: 370px;
+        width: 310px;
     }
 .proyectos__carta:hover {
-        trasform: scale(0.7);
+        trasform: scale(0.6);
     }
 
 
     .mensage_superior__links i {
         margin-top: 20px;
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .sobre_mi__titulo {
