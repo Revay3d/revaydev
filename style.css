@@ -639,9 +639,9 @@ body {
     }
 
 
-    .mensage_superior__links {
+    .mensage_superior__links i {
         margin-top: 20px;
-        font-size: 2px;
+        font-size: 20px;
     }
 
     .sobre_mi__titulo {
