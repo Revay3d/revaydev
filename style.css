@@ -408,7 +408,7 @@ body {
 }
 
 .icon {
-    margin: 30px;
+    margin: 30px auto;
     align-items: center;
     text-align: center;
     display: flex;
@@ -666,6 +666,16 @@ body {
     .estra__lenguajes--descripcion {
         font-size: 17px;
 
+    }
+
+    .mensage_superior__texto {
+
+        font-size: 30px;
+    }
+
+    .mensage_superior__links i {
+
+        font-size: 30px;
     }
 
 }
