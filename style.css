@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Righteous&display=swap');
 
+:root {
+    --fondo: rgb(0, 9, 20);
+    --mini_letra: rgba(202, 202, 202, 0.74);
+    --fondo_costraste: rgb(0, 6, 15);
+    --color_secundario: #004777;
+    --color_primario: #31cfff;
+    --color_terciario: #57ffe9;
+
+
+}
 
 .menu-toggle {
     margin-right: 15px;
@@ -27,16 +37,7 @@
 
 
 
-:root {
-    --fondo: rgb(0, 9, 20);
-    --mini_letra: rgba(202, 202, 202, 0.74);
-    --fondo_costraste: rgb(0, 6, 15);
-    --color_secundario: #004777;
-    --color_primario: #31cfff;
-    --color_terciario: #57ffe9;
 
-
-}
 
 .resaltar {
 
@@ -269,6 +270,7 @@ body {
 }
 
 .proyectos__carta {
+    position: relative;
     height: auto;
     transition: ease-in-out;
     margin: 50px auto;
@@ -280,12 +282,7 @@ body {
     background-color: var(--fondo_costraste);
 }
 
-.proyectos__carta:hover {
-    box-shadow: 0 0 20px var(--color_primario);
-    transform: scale(1.1);
-    cursor: pointer;
 
-}
 
 
 .proyectos__imagen {
@@ -411,7 +408,7 @@ body {
 }
 
 .icon {
-    margin: 30px auto;
+    margin: 30px;
     align-items: center;
     text-align: center;
     display: flex;
@@ -455,16 +452,26 @@ body {
 }
 
 
-.estra__contacto--links{
-    margin:4px;
-}
-    
-
-.estra__contacto--links_padre {
-    margin: 0 auto;
+.extra__contacto_partes {
+    margin-top: 50px;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.estra__contacto--links_padre {
+    width: auto;
+    border: #cecece solid 2px;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 40px 30px;
     text-align: center;
 
 
@@ -552,7 +559,12 @@ body {
     left: 200px;
 }
 
+.extra__contacto_padre {
 
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
 
 
 .footer {
@@ -628,25 +640,22 @@ body {
     .nav__menu--visible {
         padding: 30px;
 
-        height: 10vh;
+        height: 50vh;
     }
 
     .proyectos__carta {
-        width: 310px;
-    }
-.proyectos__carta:hover {
-        trasform: scale(0.6);
+        position: relative;
+        width: 340px;
     }
 
-
-    .mensage_superior__links i {
+    .mensage_superior__links {
         margin-top: 20px;
-        font-size: 30px;
+        font-size: 2px;
     }
 
     .sobre_mi__titulo {
         margin: 20px;
-        font-size: 50px;
+        font-size: 60px;
     }
 
     .sobre_mi__descripcion {
@@ -659,10 +668,65 @@ body {
 
     }
 
-.mensage_superior__texto{
+}
 
-font-size:35px;
+form {
+
+    display: flex;
+    flex-direction: column;
+
 
 }
 
+.estra__contacto-formulario__texto {
+    align-items: start;
+    text-align: start;
+
+
+}
+
+.separar {
+    font-size: 20px;
+    margin: 30px;
+}
+
+.estra__contacto-formulario__celda,
+template {
+    resize: none;
+    background-color: var(--fondo_costraste);
+    border: var(--color_secundario) solid 2px;
+    border-radius: 10px;
+    width: 250px;
+    padding: 10px;
+    margin: 5px auto;
+}
+
+.estra__contacto-formulario__enviar {
+    background-color: transparent;
+    margin-top: 20PX;
+    transition: .5S;
+    border: var(--color_primario) solid 2PX;
+    border-radius: 10PX;
+    padding: 5PX;
+    width: 100px;
+    align-self: center;
+
+
+}
+
+.estra__contacto-formulario__enviar:hover {
+    color: var(--color_primario);
+    border: #ffffff solid 2PX;
+
+}
+
+.estra__formulario--padre {
+    display: flex;
+    flex-flow: row wrap;
+    border: #cecece solid 2px;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 30px;
+    width: auto;
+    align-self: center;
 }
