@@ -764,9 +764,9 @@ template {
 
 }
 
+
 .extra__aprendisaje__card {
     border-radius: 10px;
-    width: 600px;
     display: flex;
     margin-top: 50px;
     width: 370px;
@@ -785,11 +785,7 @@ template {
 
 }
 
-.extra__aprendisaje--titulo {
-    text-align: start;
-    text-align: start;
 
-}
 
 .extra__aprendisaje--boton {
     cursor: pointer;
