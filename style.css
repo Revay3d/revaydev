@@ -820,3 +820,20 @@ template {
     color: #ffffff77;
     font-size: 15px;
 }
+
+.proyectos__informacion{
+    display: flex;
+    position: relative;
+    bottom: 20px;
+    justify-content: space-between;
+}
+
+.proyecto__version {
+    opacity: 0.7;
+    background-color: #b4b4b4;
+    color: #ffffff; 
+    padding: 7px 20px;
+    border-bottom-right-radius: 7px;
+    border-top-left-radius: 30px;
+    border: solid #8a8a8a 2px;
+}
