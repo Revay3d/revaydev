@@ -275,7 +275,7 @@ body {
 .proyecto__carta {
 
     position: relative;
-    height: auto;
+    height: 600px;
     transition: ease-in-out;
     margin: 50px auto;
     border-radius: 10px;
