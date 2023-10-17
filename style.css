@@ -20,7 +20,7 @@
 }
 
 body {
-
+   
     background-color: var(--fondo);
     font-family: 'Righteous', cursive;
 }
@@ -84,6 +84,12 @@ body {
     border-bottom: transparent solid 2px;
     border-radius: 10px;
 }
+
+.nav__item.active {
+    color: var(--color_primario);
+    border-bottom: var(--color_terciario) solid 2px;
+  }
+  
 
 .nav__item--contacto {
     border-bottom: var(--color_primario) solid 2px;
@@ -429,10 +435,11 @@ body {
     font-size: 100px;
     flex-flow: row wrap;
 
+
 }
 
 .icon {
-    margin: 30px auto;
+    margin: 40px auto;
     align-items: center;
     text-align: center;
     display: flex;
@@ -503,6 +510,7 @@ body {
 
 .contacto__link {
     margin: 20px 0;
+    font-size: 15px;
 
 }
 
@@ -515,7 +523,7 @@ body {
     border-right: transparent solid 2px;
     border-top: transparent solid 2px;
     border-radius: 10px;
-    font-size: 20px;
+    
 }
 
 .contacto__link--correo:hover {
@@ -536,7 +544,7 @@ body {
     border-right: transparent solid 2px;
     border-top: transparent solid 2px;
     border-radius: 10px;
-    font-size: 20px;
+
 }
 
 .contacto__link--x:hover {
@@ -557,7 +565,7 @@ body {
     border-right: transparent solid 2px;
     border-top: transparent solid 2px;
     border-radius: 10px;
-    font-size: 20px;
+
 }
 
 .contacto__link--discord:hover {
@@ -629,12 +637,22 @@ body {
         margin-top: 50px;
         width: 100%;
         display: flex;
-        flex-flow:c;
+        flex-flow:column;
         align-items: center;
         text-align: center;
         justify-content: center;
     }
 }
+
+@media (max-width: 1070px) {
+    .sobre_mi {
+        
+        display: flex;
+        flex-flow:column;
+       
+    }
+}
+
 @media (max-width: 700px) {
     .nav {
         backdrop-filter: none;
@@ -677,7 +695,11 @@ body {
         position: relative;
         width: 340px;
     }
-
+    .proyectos__titulo {
+       
+        font-size: 50px;
+     
+    }
     .mensage_superior__links {
         margin-top: 20px;
         font-size: 2px;
@@ -703,6 +725,13 @@ body {
     .mensage_superior__links i {
 
         font-size: 30px;
+    }
+
+    .lenguajes__texto, .consejo__texto, .Contacto__descripcion {
+
+        font-size: 15px;
+
+    
     }
 
 }
@@ -810,6 +839,7 @@ template {
 }
 
 .card__footer ul{
+
     justify-content: start;
     margin:30px;
     list-style-type: circle;
@@ -818,6 +848,16 @@ template {
 
 .card__footer li{
     margin: 10px;
+
+}
+
+.card__footer a {
+    text-decoration: underline;
+    transition: .5s;
+}
+.card__footer a:hover{
+
+ color:  var(--color_primario);
 
 }
 
