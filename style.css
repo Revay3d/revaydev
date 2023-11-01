@@ -51,7 +51,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: #0000002d;
 
     backdrop-filter: blur(17px);
@@ -294,7 +294,20 @@ body {
 
 
 
+.proyecto__estado{
+    right: 0px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+ backdrop-filter: blur(11px);
+ background: transparent;
+    padding: 20px 40px;
+    position: absolute;
+    
+}
 
+.proyecto__estado h2 {
+    color: #b8b8b8;
+}
 .proyecto__imagen {
     border-bottom: #ffffff solid 5px;
     width:100%;
@@ -407,7 +420,7 @@ body {
     padding: 40px;
 }
 
-.lenguajes__titulo, .consejo__titulo {
+.lenguajes__titulo, .consejo__titulo, .programas__titulo {
     display: flex;
     flex-flow: row wrap;
     font-size: 50px;
@@ -424,14 +437,14 @@ body {
 
 }
 
-.lenguajes__texto, .consejo__texto, .Contacto__descripcion {
+.lenguajes__texto, .consejo__texto, .Contacto__descripcion, .programas__texto {
 
     font-size: 25px;
     color: #a7a7a7;
 
 }
 
-.lenguajes__iconos {
+.lenguajes__iconos, .programas__iconos {
 
     display: flex;
     margin: 40px;
@@ -485,6 +498,14 @@ body {
     color: rgb(212, 212, 0);
 }
 
+.programas__imgs{
+
+    width: 100px;
+}
+
+.extra__programas{
+ margin-top: 110px;
+}
 
 .contacto__partes {
     margin-top: 50px;
