@@ -685,14 +685,13 @@ body {
 
     .nav__items {
         height: 0;
-        position: absolute;
+       
         display: flex;
         flex-direction: column;
         background-color: rgba(0, 6, 17, 0.781);
         backdrop-filter: blur(17px);
-
         left: 0;
-        transition: all .4s;
+        transition: all .7s;
         top: 100%;
         align-items: center;
         width: 100%;
@@ -711,8 +710,7 @@ body {
 
     .nav__menu--visible {
         padding: 30px;
-
-        height: 35vh;
+        height:auto;
     }
 
     .proyecto__carta {
