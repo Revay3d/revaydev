@@ -685,7 +685,7 @@ body {
 
     .nav__items {
         height: 0;
-       
+        position:absolute;
         display: flex;
         flex-direction: column;
         background-color: rgba(0, 6, 17, 0.781);
