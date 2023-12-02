@@ -45,7 +45,7 @@
       <li><a href="#inicio" class="nav__item">Inicio</a></li>
       <li><a href="#sobre_mi" class="nav__item">Sobre Mi</a></li>
       <li><a href="#proyectos" class="nav__item">Proyectos</a></li>
-   
+
       <li><a href="#contactos" class="nav__item nav__item--contacto">Contacto</a></li>
 
     </ul>
@@ -76,39 +76,61 @@
   <main>
 
     <section class="sobre_mi" id="sobre_mi">
+      <article class="sobre_mi__ventanas">
+        <div class="sobre_mi__ventana imagen" id="foto">
+          <div class="vetana__decoracion">
+            <span class="boton decoracion__boton1"></span>
+            <span class="boton decoracion__boton2"></span>
+            <span class="boton decoracion__boton3"></span>
 
-      <img src="img/RevayDev.gif" alt="RevayDev" class="sobre_mi__imagen" />
-      <div>
-        <p class="sobre_mi__titulo">Sobre mi</p>
-        <p class="sobre_mi__descripcion">RevayDev es un seudonimo es decir un nombre artistico. <br> mi nombre es<span
-            class="resaltar"> Roberto Jimenez </span> y tengo 16 años soy de nacionalidad
-          colombiana.<br />
-          <span class="resaltar"> megusta la programacion y el diseño grafico.</span> <br />
-          tengo muchas metas (sueños) como ser un gran desarrollador web
-          <br /> y tener lo suficiente para vivir. soy un buen amigo, doy buenos
-          consejos,<br> y estoy para ayudar o consolar.
+          </div>
+          <img src="img/RevayDev.gif" alt="RevayDev" class="sobre_mi__imagen" />
+          <p>RevayDev</p>
 
+        </div>
+
+        <div class="sobre_mi__ventana" id="informacion">
+          <div class="vetana__decoracion">
+            <span class=" boton decoracion__boton1"></span>
+            <span class=" boton decoracion__boton2"></span>
+            <span class=" boton decoracion__boton3"></span>
+
+          </div>
+          <div class="sobre_mi__texto">
+            <p class="sobre_mi__titulo">Sobre mi</p>
+            <p class="sobre_mi__descripcion">RevayDev es un seudonimo es decir un nombre artistico. <br> mi nombre
+              es<span class="resaltar"> Roberto Jimenez </span> y tengo 16 años soy de nacionalidad
+              colombiana.<br />
+              <span class="resaltar"> megusta la programacion y el diseño grafico.</span> <br />
+              tengo muchas metas (sueños) como ser un gran desarrollador web
+              <br /> y tener lo suficiente para vivir. soy un buen amigo, doy buenos
+              consejos,<br> y estoy para ayudar o consolar.
+
+          </div>
+        </div>
+      </article>
+      <div class="estadisticas">
+        <div class="estado">
+          <samp class="estado__titulo">Clientes</samp>
+          <samp class="estado__numero">2</samp>
+        </div>
+
+        <div class="estado">
+          <samp class="estado__titulo">Proyectos</samp>
+          <samp class="estado__numero">3</samp>
+        </div>
+
+        <div class="estado">
+          <samp class="estado__titulo">Experiencia</samp>
+          <samp class="estado__numero">2 años</samp>
+        </div>
 
       </div>
+
+
 
     </section>
-    <div class="estadisticas">
-      <div class="estado">
-        <samp class="estado__titulo">Clientes</samp>
-        <samp class="estado__numero">2</samp>
-      </div>
 
-      <div class="estado">
-        <samp class="estado__titulo">Proyectos</samp>
-        <samp class="estado__numero">3</samp>
-      </div>
-
-      <div class="estado">
-        <samp class="estado__titulo">Experiencia</samp>
-        <samp class="estado__numero">2 años</samp>
-      </div>
-
-    </div>
     <span id="proyectos"></span>
     <h1 class="proyectos__titulo">PROYECTOS</h1>
     <section class="proyectos">
@@ -118,8 +140,7 @@
       <article class="proyecto__carta">
 
 
-        <img class="proyecto__imagen proyecto__imagen--icon" src="img/safebox.png"
-          alt="SafeBox">
+        <img class="proyecto__imagen proyecto__imagen--icon" src="img/safebox.png" alt="SafeBox">
         <div class="proyecto__interior">
           <div class="proyecto__lenguajes">
 
@@ -133,10 +154,10 @@
             tu dispositivo local o en una unidad USB.</p>
 
           <div class="proyecto__botones">
-
-            <a href="https://github.com/revay3d/SafeBox" target="_blank"> <span
-                class=" proyecto__boton proyecto__boton--codigo">
-                Codigo</span></a>
+            <span class=" proyecto__boton proyecto__boton--codigo">
+              <a href="https://github.com/revay3d/SafeBox" target="_blank">
+                Codigo</a>
+            </span>
 
 
           </div>
@@ -144,14 +165,13 @@
 
       </article>
       <article class="proyecto__carta">
-        <div class="proyecto__estado"><h2>¡Nuevo!</h2></div>
-        <img class="proyecto__imagen" src="img/discord.png"
-          alt="Discord bot">
+        <!-- <div class="proyecto__estado"><h2>¡Nuevo!</h2></div> -->
+        <img class="proyecto__imagen" src="img/discord.png" alt="Discord bot">
         <div class="proyecto__interior">
           <div class="proyecto__informacion">
             <div class="proyecto__version">Version 1.2</div>
             <div class="proyecto__lenguajes">
-             
+
               <i class="fa-brands fa-python"></i>
               <i class="fa-brands fa-html5"></i>
               <i class="fa-brands fa-css3-alt"></i>
@@ -166,14 +186,15 @@
             para uso personal no para comercio o uso publico. </p>
 
           <div class="proyecto__botones">
+            <span class=" proyecto__boton proyecto__boton--codigo">
+              <a href="https://github.com/revay3d/Discord.py" target="_blank">
+                Codigo</a>
+            </span>
+            <span class="proyecto__boton proyecto__boton--info">
+              <a href="https://youtu.be/g-XOB3019QU?si=MsZelB_tcek0QNcO" target="_blank">
 
-            <a href="https://github.com/revay3d/Discord.py" target="_blank"> <span
-                class=" proyecto__boton proyecto__boton--codigo">
-                Codigo</span></a>
-
-                <a href="https://youtu.be/g-XOB3019QU?si=MsZelB_tcek0QNcO" target="_blank"> <span
-                  class=" proyecto__boton proyecto__boton--info">
-                  Tutorial</span></a>     
+                Tutorial</a>
+            </span>
 
           </div>
         </div>
@@ -181,9 +202,8 @@
       </article>
 
       <article class="proyecto__carta">
-        <div class="proyecto__estado"><h2>¡Nuevo!</h2></div>
-        <img class="proyecto__imagen" src="img/card.png"
-          alt="Card_contacto">
+        <!-- <div class="proyecto__estado"><h2>¡Nuevo!</h2></div> -->
+        <img class="proyecto__imagen" src="img/card.png" alt="Card_contacto">
         <div class="proyecto__interior">
           <div class="proyecto__lenguajes">
             <i class="fa-brands fa-html5"></i>
@@ -198,14 +218,14 @@
             de una manera clara y util. </p>
 
           <div class="proyecto__botones">
-
-            <a href="https://github.com/revay3d/card" target="_blank"> <span
-                class=" proyecto__boton proyecto__boton--codigo">
-                Codigo</span></a>
-
-                <a href="https://revay3d.github.io/card" target="_blank"> <span
-                  class=" proyecto__boton proyecto__boton--info">
-                  visitar</span></a>     
+            <span class=" proyecto__boton proyecto__boton--codigo">
+              <a href="https://github.com/revay3d/card" target="_blank">
+                Codigo</a>
+            </span>
+            <span class=" proyecto__boton proyecto__boton--info">
+              <a href="https://revay3d.github.io/card" target="_blank">
+                visitar</a>
+            </span>
 
           </div>
         </div>
@@ -244,15 +264,17 @@
 
       <article class="extra__programas">
         <h2 class="programas__titulo">Programas</h2>
-        <p class="programas__texto">Estos son mis programas o herramientas que uso en mi aprendisaje y tener todos mis codigos ordenados.</p>
+        <p class="programas__texto">Estos son mis programas o herramientas que uso en mi aprendisaje y tener todos mis
+          codigos ordenados.</p>
         <div class="programas__iconos">
           <div class="icon"><i class="html fa-brands fa-git-alt"></i><span class="iconos__texto">GIt</span></div>
           <div class="icon"> <i class="fa-brands fa-github"></i><span class="iconos__texto">GITHUB</span></div>
-          <div class="icon"><img class="programas__imgs" src="img/icons8-visual-studio-code.svg" alt="vscode"><span class="iconos__texto">VSCODE</span></div>
+          <div class="icon"><img class="programas__imgs" src="img/icons8-visual-studio-code.svg" alt="vscode"><span
+              class="iconos__texto">VSCODE</span></div>
 
           <div class="icon"> <i class="py fa-brands fa-windows"></i><span class="iconos__texto">WINDOWS 11</span></div>
 
-          </div>
+        </div>
 
 
 
@@ -277,7 +299,8 @@
             <div class="card__footer">
               <ul>
                 <li><a href="https://www.freecodecamp.org/"> FreecodeCamp</a></li>
-                <li><a href="https://skillshop.exceedlms.com/student/catalog/list?category_ids=7880&locale=es">Google Activate</a></li>
+                <li><a href="https://skillshop.exceedlms.com/student/catalog/list?category_ids=7880&locale=es">Google
+                    Activate</a></li>
               </ul>
             </div>
           </div>
