@@ -168,8 +168,6 @@ body {
 
 .mensage_superior__links{
     margin: 10px auto;
-    width: 300px;
-    font-size: 40px;
     padding: 10px;
     border: #a7a7a785 1px solid;
     background: var(--fondo_costraste);
@@ -197,8 +195,6 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content:space-around;
-   
-    gap: 10px;
 
 }
 
@@ -210,6 +206,13 @@ body {
     gap: 10px;
 
 }
+
+.imagen__texto{
+
+    margin: 10px auto;
+text-align: center;
+}
+
 .sobre_mi__titulo {
     color: var(--color_primario);
    
@@ -228,11 +231,11 @@ body {
 .sobre_mi__ventana{
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 15px 10px;
     justify-content: center;
     overflow: hidden;
     width: 400px;
-    height: 500px;
+    height: 550px;
     border-radius: 10px;
     padding: 50px;
     position: relative;
@@ -255,7 +258,7 @@ body {
 .sobre_mi__ventana::after{
     z-index: -10;
     content: "";
-    height: 430px;
+    height: 470px;
     inset: 7px;
     position: absolute;
     border-bottom-left-radius: 10px;
@@ -365,15 +368,14 @@ body {
 
 /* proyectos  */
 
-.proyectos__titulo {
-   margin: 170px auto 20px;
+.proyectos__titulo, .extra__titulo {
+   margin: 100px auto 10px;
     text-align: center;
 
     font-size: 70px;
     color: transparent;
     background: var(--color_gradiente);
-
-width: 410px;
+width: auto;
 background-clip: content-box;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -612,18 +614,6 @@ background-clip: content-box;
 
 /* extras lenguaje, consejos y contactos  */
 
-.extra__titulo {
-    text-align: center;
-    margin: 170px auto 20px;
-    font-size: 70px;
-    color: transparent;
-    background: var(--color_gradiente);
-
-width: 410px;
-background-clip: content-box;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
 
 .extra {
     padding: 40px;
@@ -926,11 +916,7 @@ background-clip: content-box;
       
     }
 
-    .sobre_mi__titulo {
-        margin: 20px;
-        font-size: 60px;
-    }
-
+  
     .sobre_mi__descripcion {
         font-size: 17px;
 
