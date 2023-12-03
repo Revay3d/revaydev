@@ -829,6 +829,9 @@ background-clip: content-box;
     border-radius: 7px;
     padding: 10px;
 
+    
+    width: 50px;
+
 }
 
 .footer__links i:hover {
