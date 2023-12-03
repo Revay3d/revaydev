@@ -137,16 +137,7 @@ body {
 
 }
 
-.mensage_superior::before {
-    background-color: rgba(0, 0, 0, 0.76);
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    position: absolute;
-    content: "";
-    inset: 0;
-    backdrop-filter: blur(10px);
 
-}
 
 .mensage_superior__texto {
     z-index: 1;
@@ -369,7 +360,7 @@ text-align: center;
 /* proyectos  */
 
 .proyectos__titulo, .extra__titulo {
-   margin: 100px auto 10px;
+   margin: 200px auto 10px;
     text-align: center;
 
     font-size: 70px;
@@ -390,7 +381,7 @@ background-clip: content-box;
     align-items: center;
     text-align: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 
     padding: 0 auto;
 }
@@ -634,7 +625,7 @@ background-clip: content-box;
 
 
 
-.lenguajes__texto, .consejo__texto, .Contacto__descripcion, .programas__texto {
+.lenguajes__texto, .consejo__texto, .Contacto__descripcion {
 
     font-size: 25px;
     color: #a7a7a7;
@@ -710,6 +701,8 @@ background-clip: content-box;
     display: flex;
     flex-flow:row wrap;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: 10px;
 }
 
@@ -816,16 +809,22 @@ background-clip: content-box;
 .footer__texto {
     font-size: 20px;
     color: #cecece;
+    margin-bottom: 25px;
 
 
 
 }
+.footer__links{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
 
 .footer__links i {
     transition: 0.5s;
-    margin-top: 10px;
     font-size: 20px;
-    margin-left: 20px;
     background-color: var(--color_primario);
     border-radius: 7px;
     padding: 10px;
@@ -993,8 +992,10 @@ template {
 
 .contacto__formulario, .contacto__links {
     width: 300px;
+    height: 350px;
     align-items: center;
     text-align: center;
+    justify-content: center;
     display: flex;
     flex-flow:column;
     border: #cecece solid 2px;
