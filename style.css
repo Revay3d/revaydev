@@ -710,8 +710,10 @@ background-clip: content-box;
 
 
 .contacto__link {
-    margin: 20px 0;
     font-size: 15px;
+    align-items: center;
+    text-align: center;
+
 
 }
 
@@ -781,7 +783,8 @@ background-clip: content-box;
 .contacto__link--texto {
     margin-left: 4px;
     position: relative;
-    bottom: 4px;
+    text-align: center;
+    align-items: center;
 
 }
 
@@ -1000,6 +1003,7 @@ template {
     text-align: center;
     justify-content: center;
     display: flex;
+    gap: 20px;
     flex-flow:column;
     border: #cecece solid 2px;
     border-radius: 10px;
