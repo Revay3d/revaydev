@@ -426,13 +426,9 @@ background-clip: content-box;
 
 
 .proyecto__estado{
-    right: 0px;
-    border-bottom-left-radius: 10px;
-    
- backdrop-filter: blur(4px);
- background: transparent;
     padding: 20px 40px;
     position: absolute;
+    width: 200px;
     
 }
 
