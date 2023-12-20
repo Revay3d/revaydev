@@ -52,7 +52,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 70px;
     background-color: #0000002d;
 
     backdrop-filter: blur(17px);
@@ -83,7 +83,7 @@ body {
     color: white;
     transition: all .5s;
     border-bottom: transparent solid 2px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .nav__item.active {
@@ -158,11 +158,16 @@ body {
 
 
 .mensage_superior__links{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
     margin: 10px auto;
-    padding: 10px;
+    padding: 1px 0;
     border: #a7a7a785 1px solid;
     background: var(--fondo_costraste);
     border-radius: 300px;
+    width: 250px;
+    font-size: 40px;
 }
 .mensage_superior__links i {
      
@@ -378,7 +383,7 @@ background-clip: content-box;
     display: flex;
     flex-flow: row wrap;
     margin: 0 auto;
-    align-items: center;
+    align-items: stretch;
     text-align: center;
     justify-content: center;
     gap: 30px;
@@ -399,7 +404,7 @@ background-clip: content-box;
 .proyecto__carta {
     overflow: hidden;
     position: relative;
-    height: 600px;
+ 
     transition: ease-in-out;
    
     border-radius: 10px;
@@ -480,7 +485,9 @@ background-clip: content-box;
 .proyecto__botones {
     margin: 20px 0;
     display: flex;
-    justify-content: center;
+    position: absolute;
+    bottom: -20px;
+    justify-content:center;
     gap: 20px;
     flex-flow: row wrap;
     
@@ -827,9 +834,9 @@ background-clip: content-box;
     background-color: var(--color_primario);
     border-radius: 7px;
     padding: 10px;
-
-    
-    width: 50px;
+    text-align: center;
+    justify-content: center;
+    width: 45px;
 
 }
 
@@ -850,6 +857,10 @@ background-clip: content-box;
       
         justify-content: center;
     }
+
+    .mensage_superior__links{
+        width: auto;
+    }
 }
 
 @media (max-width: 1070px) {
@@ -863,6 +874,7 @@ background-clip: content-box;
 
 @media (max-width: 700px) {
     .nav {
+        padding: 10px 0;
         backdrop-filter: none;
         background-color: rgb(0, 0, 0);
     }
