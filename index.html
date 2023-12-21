@@ -35,6 +35,7 @@
 </head>
 
 <body>
+
   <nav class="nav">
 
     <h1 class="nav__title">RevayDev</h1>
@@ -51,6 +52,10 @@
     </ul>
 
   </nav>
+  <div class="loadericon">
+    <div></div>
+    <h1>Cargando...</h1>
+</div>
 
   <header>
     <div class="mensage_superior negrita" id="inicio">
@@ -76,7 +81,7 @@
   <main>
 
     <section class="sobre_mi" id="sobre_mi">
-      <article class="sobre_mi__ventanas">
+      <article class="sobre_mi__ventanas  elemento">
         <div class="sobre_mi__ventana imagen" id="foto">
           <div class="vetana__decoracion">
             <span class="boton decoracion__boton1"></span>
@@ -109,7 +114,7 @@
           </div>
         </div>
       </article>
-      <div class="estadisticas">
+      <div class="estadisticas elemento">
         <div class="estado">
           <samp class="estado__titulo">Clientes</samp>
           <samp class="estado__numero">2</samp>
@@ -132,12 +137,12 @@
     </section>
 
     <span id="proyectos"></span>
-    <h1 class="proyectos__titulo">PROYECTOS</h1>
-    <section class="proyectos">
+   <div class="caja"> <h1 class="proyectos__titulo elemento">PROYECTOS</h1> </div>
+    <section class="proyectos elemento">
 
       <article class="proyecto__carta">
 
-
+        <span class="proyecto__estado"><h2>¡Nuevo!</h2></span>
         <img class="proyecto__imagen" src="img/Calculadora.webp" alt="Card_contacto">
 
         <div class="proyecto__interior">
@@ -151,7 +156,8 @@
           <h1 class="proyecto__carta--titulo">Calculadora</h1>
 
           <p class="proyecto__descripcion">Una calculadora simple con html, css y js que la cree para saber como
-            funciona js y hazta el momento es divertido y es unos de los lenguajes primarios para las paginas web, para que veas como funciona.</p>
+            funciona js y hazta el momento es divertido y es unos de los lenguajes primarios para las paginas web, para
+            que veas como funciona.</p>
 
           <div class="proyecto__botones">
             <span class=" proyecto__boton proyecto__boton--codigo">
@@ -169,7 +175,7 @@
       </article>
 
 
-      <article class="proyecto__carta">
+      <article class="proyecto__carta ">
 
 
         <img class="proyecto__imagen proyecto__imagen--icon" src="img/safebox.webp" alt="SafeBox">
@@ -197,7 +203,7 @@
 
       </article>
       <article class="proyecto__carta">
-        <!-- <div class="proyecto__estado"><h2>¡Nuevo!</h2></div> -->
+ 
         <img class="proyecto__imagen" src="img/discord.webp" alt="Discord bot">
         <div class="proyecto__interior">
           <div class="proyecto__informacion">
@@ -272,12 +278,12 @@
 
     <section class="extra">
 
-      <h1 class="extra__titulo">EXTRAS</h1>
+    <div class="caja"> <h1 class="extra__titulo elemento">EXTRAS</h1></div> 
       <article class="extra__lenguajes">
         <h2 class="lenguajes__titulo">Lenguajes</h2>
         <p class="lenguajes__texto">Estos son mis lenguajes favoritos y los que se usar. mas
           adelante aprendere mas lenguajes de programacion.</p>
-        <div class="lenguajes__iconos">
+        <div class="lenguajes__iconos elemento">
           <div class="icon"><i class="html fa-brands fa-html5"></i><span class="iconos__texto">HTML</span></div>
           <div class="icon"> <i class="css fa-brands fa-css3-alt"></i><span class="iconos__texto">CSS</span></div>
           <div class="icon"><i class="fa-brands fa-square-js js"></i><span class="iconos__texto">JAVASCRIPT</span></div>
@@ -301,7 +307,7 @@
         <p class="Contacto__descripcion">Estos son mis programas o herramientas que uso en mi aprendisaje y tener todos
           mis
           codigos ordenados.</p>
-        <div class="programas__iconos">
+        <div class="programas__iconos elemento">
           <div class="icon"><i class="html fa-brands fa-git-alt"></i><span class="iconos__texto">GIt</span></div>
           <div class="icon"> <i class="fa-brands fa-github"></i><span class="iconos__texto">GITHUB</span></div>
           <div class="icon"><img class="programas__imgs" src="img/icons8-visual-studio-code.svg" alt="vscode"><span
@@ -323,7 +329,7 @@
       <h2 class="consejo__titulo espacio">Consejos</h2>
       <p class="consejo__texto">Terrecomiendo algunas cosa para que empiezes en el mundo de la programacion.</p>
 
-      <article class="consejo__padre">
+      <article class="consejo__padre elemento">
 
         <div class="consejo__card">
           <div class="card__interior">
@@ -390,7 +396,7 @@
 
 
         <div class="contacto__partes">
-          <div class="contacto__formulario">
+          <div class="contacto__formulario elemento">
             <form action="https://formspree.io/f/xgejzykw" method="POST">
 
               <label class="formulario__texto" for="name">Nombre Completo</label>
@@ -409,9 +415,9 @@
             </form>
           </div>
 
-          <span class="separar">O</span>
+          <span class="separar elemento">O</span>
 
-          <div class="contacto__links">
+          <div class="contacto__links elemento">
             <span class="contacto__link contacto__link--correo"> <i class="fa-solid fa-envelope"></i>
               <span class="contacto__link--texto">revaydev17@gmail.com</span></span>
 
