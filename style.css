@@ -57,10 +57,8 @@ body.loader{
     
 }
 
-
 body.loader .loadericon{
     opacity: 0;
-    visibility: hidden;
 
 }
  .loadericon {
@@ -143,7 +141,7 @@ body.loader .loadericon{
 
   backdrop-filter: blur(17px);
   z-index: 70;
-  overflow: hidden;
+
 }
 
 .nav::after{

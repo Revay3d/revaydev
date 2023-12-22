@@ -43,21 +43,17 @@ const cargarImagen = (entrada, observador) => {
 const observador = new IntersectionObserver(cargarImagen, {
   root: null,
   rootMargin: "1px 0px",
-  threshold: 0.20,
+  threshold: 0.10,
 });
 
 elemento.forEach((elemento) => observador.observe(elemento));
 
 
 window.addEventListener('load', function() {
-  
   setTimeout(function() {
     var loader = document.querySelector("body");
+    var loadericon = document.querySelector(".loadericon");
     loader.classList.add('loader');
-  
+    loadericon.style.display = 'none';
   }, 500);
-
-   
-
-
 });
