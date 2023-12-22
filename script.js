@@ -43,7 +43,7 @@ const cargarImagen = (entrada, observador) => {
 const observador = new IntersectionObserver(cargarImagen, {
   root: null,
   rootMargin: "1px 0px",
-  threshold: 0.10,
+  threshold: 0,
 });
 
 elemento.forEach((elemento) => observador.observe(elemento));
