@@ -130,7 +130,7 @@ body.loader .loadericon{
 }
 
 .nav {
-  position: fixed;
+
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -1273,4 +1273,20 @@ template {
 
 .espacio {
   margin-top: 150px;
+}
+
+
+.anuncio{
+  background-color: var(--color_primario);
+  padding: 20px;
+  justify-content: center;
+  display: flex ;
+  text-align: center;
+}
+
+.auncio_nav{
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+
 }
