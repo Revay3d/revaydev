@@ -21,6 +21,7 @@ export default function Nav() {
   }, []);
 
   return (
+    <>
     <nav className={`nav ${scroll ? 'nav--scroll' : ''}`}>
       <h1 className='nav__logo'>RevayDev</h1>
       <ul className={`nav__menu ${menuToggle ? 'active' : ''}`}>
@@ -35,5 +36,9 @@ export default function Nav() {
         <span className='barra3'></span>
       </span>
     </nav>
+
+<div className={`nav__menu--fondo ${menuToggle ? 'active-fondo' : ''}`}></div>
+
+</>
   );
 }
