@@ -866,6 +866,17 @@ background-color: #ffffff;
 }
 
 @media (max-width: 700px){
+  .conteiner__titulo {
+ margin-left: 0;
+    
+   
+  }
+  
+  .conteiner__texto {
+    font-size: 17px;
+    margin-left: 0;
+   
+  }
 
   .titulo{
     font-size: 50px;

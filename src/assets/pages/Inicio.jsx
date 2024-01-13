@@ -24,7 +24,7 @@ export default function Inicio() {
           <p>
             Soy <samp className="text__name"> RevayDev</samp>
           </p>
-          <p className="text__job">Junior front end developer.</p>
+          <p className="text__job">Frontend Developer.</p>
           <div className="text__links">
           <a href="https://discord.com/users/1066481602403766313" target="_blank">  <i className="fa-brands fa-discord"></i> </a>
            <a href="https://www.youtube.com/channel/UCE7NWSOlaZ4IOXfIuBip_kQ" target="_blank"> <i className="fa-brands fa-youtube"></i> </a>
@@ -46,32 +46,28 @@ export default function Inicio() {
               RevayDev es un seudonimo es decir un nombre artistico. mi nombre
               es <span className="Resaltar">Roberto Jimenez</span> y tengo 17
               años soy de nacionalidad colombiana.
-              <span className="Resaltar">
-                {" "}
-                megusta la programacion y el diseño grafico.{" "}
-              </span>
-              tengo muchas metas (sueños) como ser un gran desarrollador web y
-              tener lo suficiente para vivir. soy un buen amigo, doy buenos
-              consejos, y estoy para ayudar o consolar.
+              y poseo una gran capacidad para trabajar tanto en equipo como de manera independiente. Me apasiona aprender y estoy constantemente buscando formas de mejorar mis habilidades. Destaco por mi habilidad para asimilar rápidamente nuevos conocimientos y aplicarlos eficientemente en cualquier tarea que se me asigne o enseñe.
+
+             
             </p>
 
             <div className="historia">
               <Historia
                 titulo="Inicio - Forntend"
                 fecha="Julio 2021"
-                texto="Empeze a programar con bloques con micro:bit y luego cree una web fea pero ya luego aprendi un poco de diseño web."
+                texto="Inicié con micro:bit, mi primera web no fue perfecta, pero mejoré y ahora diseño sitios profesionales y atractivos."
               />
 
               <Historia
                 titulo="Creando - Porfolio"
                 fecha="Enero 2024"
-                texto="Creando mi propio porfolio con React y algunos diseños de referencias para hacer mi web bonita y profecional."
+                texto="Desarrollo mi portafolio con React, inspirándome en diseños de referencia para crear una web estética y profesional."
               />
 
               <Historia
                 titulo="Estudiando - Backend"
                 fecha="Enero 2024"
-                texto="En este momento, me encuentro en un emocionante viaje de aprendizaje, centrado en el desarrollo backend. Mi objetivo es mejorar mis servicios y habilidades de programación, y estoy comprometido con este camino de crecimiento y desarrollo personal. "
+                texto=""
               />
             </div>
           </div>
@@ -179,7 +175,7 @@ titulo="PROYECTOS"
               <img
                 className="proyecto__imagen"
                 src="img/card.webp"
-                alt="Card_contacto"
+                alt="Card_Contacto"
               />
 
               <div className="proyecto__lenguajes">
@@ -189,7 +185,7 @@ titulo="PROYECTOS"
             </div>
 
             <ProyectoCard
-              titulo="Card_contacto"
+              titulo="Card Contacto"
               descripcion="Código HTML y CSS para perfil personal con enlaces a redes sociales, ideal para principiantes.
 
 
@@ -213,8 +209,7 @@ titulo="EXTRAS"
 
 <article className="extra">
 
-  <SeccionExtra titulo="Lenguajes" descripcion="Estos son mis lenguajes favoritos y los que se usar. mas
-          adelante aprendere mas lenguajes de programacion." />
+  <SeccionExtra titulo="Herramientas" descripcion="Estos son mis lenguajes de programación y  frameworks favoritos y los que sé utilizar. Más adelante, aprenderé más lenguajes de programación o  frameworks." />
      
           <div className="conteniner_iconos">
          
@@ -271,13 +266,13 @@ titulo="EXTRAS"
 
      <article className="extra">
 
-     <SeccionExtra titulo="Consejos" descripcion="Quieres contactarme? si quieres que te cree un sitio web o si quieres que te promocione tus servicios o productos. puedes hacerlo por los siguientes medios disponibles." />
+     <SeccionExtra titulo="Consejos" descripcion="Estos son los lugares de aprendizaje que te recomiendo si estás interesado en aprender desarrollo web y herramientas útiles." />
 
      <div className="conteniner_cards">
 <ConsejosCart 
 icono="graduation-cap"
 titulo="Aprendisajes"
-descripcion="Estos son los lugares de aprendisaje faciles y gratuitos con sertificados."
+descripcion="Estos son los lugares de aprendizaje fáciles y gratuitos que ofrecen certificados."
 texto_url1="FreecodeCamp" 
 url1="https://www.freecodecamp.org/espanol/"
 texto_url2="Google Activate" 
@@ -288,7 +283,7 @@ url2="https://skillshop.exceedlms.com/student/catalog/list?category_ids=7880&loc
 <ConsejosCart 
 icono="toolbox"
 titulo="Herramientas"
-descripcion="Estas son las herramientas que uso para los icons y fuentes para mis webs."
+descripcion="Estas son las herramientas que utilizo para los íconos y fuentes en mis sitios web."
 texto_url1="Font Awesome" 
 url1="https://fontawesome.com/"
 texto_url2="Google Fonts" 
@@ -299,8 +294,7 @@ url2="https://fonts.google.com/"
 <ConsejosCart 
 icono="code"
 titulo="Programas"
-descripcion="Estas son los programas que recomiendo para que trabajes
-comodamente."
+descripcion="Estas son las aplicaciones o programas útiles para trabajar cómodamente."
 texto_url1="Visual Code" 
 url1="https://code.visualstudio.com/"
 texto_url2="Github" 
@@ -308,13 +302,15 @@ url2="https://github.com/"
 
 />
 
+
+
      </div>
 
     
      </article>
 
      <article className="extra">
-     <SeccionExtra titulo="Contame" descripcion="Quieres contactarme? si quieres que te cree un sitio web o si quieres que te promocione tus servicios o productos. puedes hacerlo por los siguientes medios disponibles." />
+     <SeccionExtra titulo="Contáctame" descripcion="¿Quieres contactarme? Si deseas que cree un sitio web para ti o si estás interesado en que promocione tus servicios o productos, puedes hacerlo a través de los siguientes medios disponibles." />
 
 
 
