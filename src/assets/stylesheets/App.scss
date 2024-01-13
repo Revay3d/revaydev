@@ -451,7 +451,6 @@ margin-right: 20px;
     justify-content: center;
     gap: 20px;
     flex-flow: row wrap;
-  cursor: pointer;
     & a:hover{
       color: #fff;
     }
@@ -870,6 +869,10 @@ background-color: #ffffff;
  margin-left: 0;
     
    
+  }
+
+  .contacto__formulario{
+    height: 300px;
   }
   
   .conteiner__texto {

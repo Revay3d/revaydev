@@ -67,7 +67,7 @@ export default function Inicio() {
               <Historia
                 titulo="Estudiando - Backend"
                 fecha="Enero 2024"
-                texto=""
+                texto="Actualmente, estoy aprendiendo sobre Backend para poder desarrollar sitios web de tiendas en línea y proyectos similares."
               />
             </div>
           </div>
