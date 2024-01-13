@@ -18,14 +18,14 @@
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   --fondo: rgb(0, 0, 0);
-  --fondo_nav:  rgba(0, 0, 0, 0.582);
-  --mini_letra: rgba(202, 202, 202, 0.74);
+  --fondo_nav:  rgba(0, 0, 0, 0.342);
+  --mini_letra: rgba(202, 202, 202, 0.692);
   --fondo_costraste: rgb(0, 6, 15);
   --color_secundario: rgb(206, 45, 255);
   --color_primario: rgb(0, 119, 255);
   --color_terciario: #6857ff;
   --color_gradiente: linear-gradient(77deg, rgb(0, 26, 255), rgb(255, 0, 157));
- --trasparenteBorroso: blur(17px);
+ --trasparenteBorroso: blur(10px);
  --trasition: all 0.3s
 
 }
@@ -33,6 +33,7 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 

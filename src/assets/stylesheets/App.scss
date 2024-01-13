@@ -116,13 +116,13 @@ border-radius: 1rem;
 .text__job{
 
     font-size: 25px;
-   opacity: 0.6;
+  color: var(--mini_letra);
 }
 
 .text__links{
     z-index: 10;
     position: relative;
-     padding: 5px 10px;
+     padding: 0 10px;
      display: flex;
      justify-content: space-evenly;
      border-radius: 3rem;
@@ -137,12 +137,12 @@ border-radius: 1rem;
 
     & i{
         transition: var(--trasition);
-        opacity: 0.7;
+        color: var(--mini_letra);
         cursor: pointer;
 
         &:hover{
             color: var(--color_primario);
-            opacity: 1;
+          
         }
     }
 }
@@ -176,7 +176,7 @@ border-radius: 1rem;
 .sobre_mi__text{
     width: 900px;
     font-size: 17px;
-    opacity: 0.7;
+    color: var(--mini_letra);
  
 }
 
@@ -240,7 +240,7 @@ margin-right: 20px;
 .historia__text, .sobre_mi__text{
     width: 600px;
   
-    opacity: 0.7;
+    color: var(--mini_letra);
 }
 
 
@@ -435,12 +435,12 @@ margin-right: 20px;
   }
   
   .proyecto__descripcion {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 15px;
- opacity: 0.5;
+    color: var(--mini_letra);
   text-align: start;
     margin-top: 10px auto;
-    color: rgb(199, 199, 199);
+    color: var(--mini_letra);
   }
   
   .proyecto__botones {
@@ -461,7 +461,6 @@ margin-right: 20px;
     width: auto;
     height: auto;
     padding: 10px 20px;
-  
     border-radius: 7px;
   }
   
@@ -557,7 +556,7 @@ margin-right: 20px;
   }
   
   .conteiner__titulo {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 40px;
     display: flex;
     flex-flow: row wrap;
     font-size: 50px;
@@ -567,6 +566,7 @@ margin-right: 20px;
   }
   
   .conteiner__texto {
+    margin-left: 40px;
     font-size: 20px;
     
     color: #a7a7a7;
@@ -676,29 +676,31 @@ margin-right: 20px;
   
   
 form {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
   display: flex;
   flex-direction: column;
 }
 
 .formulario__texto {
+  
   align-items: start;
   text-align: start;
 }
 
 .separar {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
   font-size: 20px;
   align-self: center;
   margin: 70px 0;
 
 }
 
-
-.separar.visible{
-transform: scale(1);
-opacity: 1;
-}
 .formulario__celda,
 template {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
   resize: none;
   background-color: var(--fondo_costraste);
   border: var(--color_terciario) solid 2px;
@@ -709,6 +711,8 @@ template {
 }
 
 .formulario__enviar {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
   background-color: transparent;
   margin-top: 20px;
   transition: 0.5s;
@@ -726,6 +730,8 @@ template {
 
 .contacto__formulario,
 .contacto__links {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 600;
   width: min(300px, 75%);
   height: 350px;
   align-items: center;
