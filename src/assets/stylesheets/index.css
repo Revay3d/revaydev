@@ -16,7 +16,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
   --fondo: rgb(0, 0, 0);
   --fondo_nav:  rgba(0, 0, 0, 0.295);
   --mini_letra: rgba(202, 202, 202, 0.692);
@@ -55,7 +54,7 @@ body {
   font-weight: 400;
   color: #fff;
   background-color: #000000;
-  overflow-x: hidden;
+
 
 }
 

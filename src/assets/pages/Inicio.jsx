@@ -16,8 +16,10 @@ export default function Inicio() {
     });
   }, []);
 
+
   return (
     <>
+
       <header className="header">
         <div className="header__text">
           <p>¡Hola mundo! </p>
@@ -44,7 +46,7 @@ export default function Inicio() {
             <h2 className="sobre_mi__title">Sobre Mi</h2>
             <p className="sobre_mi__text">
               RevayDev es un seudonimo es decir un nombre artistico. mi nombre
-              es <span className="Resaltar">Roberto Jimenez</span> y tengo 17
+              es <span className="Resaltar">Roberto Jimenez</span> y tengo 16
               años soy de nacionalidad colombiana.
               y poseo una gran capacidad para trabajar tanto en equipo como de manera independiente. Me apasiona aprender y estoy constantemente buscando formas de mejorar mis habilidades. Destaco por mi habilidad para asimilar rápidamente nuevos conocimientos y aplicarlos eficientemente en cualquier tarea que se me asigne o enseñe.
 
@@ -76,7 +78,7 @@ export default function Inicio() {
 
             <Estadisticas titulo="Proyectos" numero="5" />
 
-            <Estadisticas titulo="Experiencia" numero="+3" letra="Años" />
+            <Estadisticas titulo="Experiencia" numero="+3" letra="años" />
           </div>
         </div>
 
@@ -85,21 +87,60 @@ titulo="PROYECTOS"
 />
        
         <section className="proyectos" id="proyectos">
-          <article className="proyecto__carta">
+
+        <article className="proyecto__carta">
             <div>
-              <span className="proyecto__estado">
+            <span className="proyecto__estado">
                 <h2>¡Nuevo!</h2>
               </span>
+              <img
+                className="proyecto__imagen"
+                src="img/TempCat.png"
+                alt="Card_Contacto"
+              />
+ <div className="proyecto__informacion">
+  <span></span>
+              <div className="proyecto__lenguajes">
+                <i className="fa-brands fa-html5"></i>
+                <i className="fa-brands fa-css3-alt"></i>
+                <i className="fa-brands fa-react"></i>
+                <i className="fa-brands fa-node"></i>
+              </div>
+              </div>
+            </div>
+
+            <ProyectoCard
+              titulo="TempCat"
+              descripcion="Sitio web de un server de minecraft hecho para informar a sus usuarios, lo cree para aprender react y diseño web profecional."
+
+
+              
+              texto_url1="Codigo"
+              url1="https://github.com/revay3d/TempCat"
+              codigo={true}
+              info={true}
+
+              texto_url2="Visitar"
+              url2="https://revay3d.github.io/TempCat"
+            />
+
+          </article>
+
+          <article className="proyecto__carta">
+            <div>
+           
               <img
                 className="proyecto__imagen"
                 src="img/Calculadora.webp"
                 alt="Calculadora"
               />
-
+ <div className="proyecto__informacion">
+  <span></span>
               <div className="proyecto__lenguajes">
                 <i className="fa-brands fa-html5"></i>
                 <i className="fa-brands fa-css3-alt"></i>
                 <i className="fa-brands fa-js"></i>
+              </div>
               </div>
             </div>
 
@@ -115,6 +156,9 @@ titulo="PROYECTOS"
             />
           </article>
 
+
+          
+
           <article className="proyecto__carta">
             <div>
               <img
@@ -122,9 +166,11 @@ titulo="PROYECTOS"
                 src="img/safebox.webp"
                 alt="SafeBox"
               />
-
+ <div className="proyecto__informacion">
+  <span></span>
               <div className="proyecto__lenguajes">
                 <i className="fa-brands fa-python"></i>
+              </div>
               </div>
             </div>
 
@@ -177,29 +223,33 @@ titulo="PROYECTOS"
                 src="img/card.webp"
                 alt="Card_Contacto"
               />
-
+ <div className="proyecto__informacion">
+  <span></span>
               <div className="proyecto__lenguajes">
                 <i className="fa-brands fa-html5"></i>
                 <i className="fa-brands fa-css3-alt"></i>
               </div>
             </div>
+            </div>
 
             <ProyectoCard
               titulo="Card Contacto"
-              descripcion="Código HTML y CSS para perfil personal con enlaces a redes sociales, ideal para principiantes.
+              descripcion="Código HTML y CSS para perfil personal con enlaces a redes sociales, ideal para principiantes que decean aprender.
 
 
               "
               texto_url1="Codigo"
-              url1="https://github.com/revay3d/Discord.py"
+              url1="https://github.com/revay3d/card"
               codigo={true}
               info={true}
 
               texto_url2="Visitar"
-              url2="https://revay3d.github.io/Card"
+              url2="https://revay3d.github.io/card"
             />
 
           </article>
+
+         
 
         </section>
 
@@ -271,7 +321,7 @@ titulo="EXTRAS"
      <div className="conteniner_cards">
 <ConsejosCart 
 icono="graduation-cap"
-titulo="Aprendisajes"
+titulo="Aprendizajes"
 descripcion="Estos son los lugares de aprendizaje fáciles y gratuitos que ofrecen certificados."
 texto_url1="FreecodeCamp" 
 url1="https://www.freecodecamp.org/espanol/"
