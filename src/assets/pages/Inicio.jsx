@@ -95,7 +95,7 @@ titulo="PROYECTOS"
               </span>
               <img
                 className="proyecto__imagen"
-                src="img/TempCat.png"
+                src="img/TempCat.webp"
                 alt="Card_Contacto"
               />
  <div className="proyecto__informacion">
