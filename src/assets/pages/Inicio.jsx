@@ -95,66 +95,37 @@ titulo="PROYECTOS"
               </span>
               <img
                 className="proyecto__imagen"
-                src="img/TempCat.webp"
-                alt="Card_Contacto"
+                src="img/discord_js.webp"
+                alt="Discord.py"
               />
- <div className="proyecto__informacion">
-  <span></span>
-              <div className="proyecto__lenguajes">
-                <i className="fa-brands fa-html5"></i>
-                <i className="fa-brands fa-css3-alt"></i>
-                <i className="fa-brands fa-react"></i>
-                <i className="fa-brands fa-node"></i>
-              </div>
-              </div>
+
+            <div className="proyecto__informacion">
+            <div className="proyecto__version">Version 1.0</div>
+            <div className="proyecto__lenguajes">
+
+              <i className="fa-brands fa-js"></i>
+              <i className="fa-brands fa-node-js"></i>
+       
+
+            </div>
+          </div>
             </div>
 
             <ProyectoCard
-              titulo="TempCat"
-              descripcion="Sitio web de un server de minecraft hecho para informar a sus usuarios, lo cree para aprender react y diseño web profecional."
-
-
-              
+              titulo="Discord.js"
+              descripcion="Bot Discord v14 por RevayDev: envía mensajes de prefixs y slash commands sensillos, no tiene muchos comandos porque es un codigo base."
               texto_url1="Codigo"
-              url1="https://github.com/revay3d/TempCat"
-              codigo={true}
-              info={true}
-
-              texto_url2="Visitar"
-              url2="https://revay3d.github.io/TempCat"
-            />
-
-          </article>
-
-          <article className="proyecto__carta">
-            <div>
-           
-              <img
-                className="proyecto__imagen"
-                src="img/Calculadora.webp"
-                alt="Calculadora"
-              />
- <div className="proyecto__informacion">
-  <span></span>
-              <div className="proyecto__lenguajes">
-                <i className="fa-brands fa-html5"></i>
-                <i className="fa-brands fa-css3-alt"></i>
-                <i className="fa-brands fa-js"></i>
-              </div>
-              </div>
-            </div>
-
-            <ProyectoCard
-              titulo="Calculadora"
-              descripcion="Calculadora HTML, CSS, JS: aprendizaje divertido de JavaScript con estilos simples, vital para crear interactividad en sitios web."
-              texto_url1="Codigo"
-              url1="https://github.com/revay3d/Calculadora"
-              texto_url2="Visitar"
-              url2="https://revay3d.github.io/Calculadora"
-              info={true}
+              url1="https://github.com/revay3d/Discord.js"
+             
+            
               codigo={true}
             />
           </article>
+
+
+   
+
+          
 
 
           
@@ -170,6 +141,7 @@ titulo="PROYECTOS"
   <span></span>
               <div className="proyecto__lenguajes">
                 <i className="fa-brands fa-python"></i>
+                
               </div>
               </div>
             </div>
@@ -178,7 +150,7 @@ titulo="PROYECTOS"
               titulo="SafeBox"
               descripcion="aplicación Windows en desarrollo para almacenar y gestionar archivos como PDF, Word, fotos, y códigos de forma segura."
               texto_url1="Codigo"
-              url1="https://github.com/revay3d/Discord.py"
+              url1="https://github.com/revay3d/SafeBox"
               codigo={true}
             />
           </article>
@@ -215,6 +187,41 @@ titulo="PROYECTOS"
             />
           </article>
 
+          <article className="proyecto__carta">
+            <div>
+        
+              <img
+                className="proyecto__imagen"
+                src="img/TempCat.webp"
+                alt="Card_Contacto"
+              />
+ <div className="proyecto__informacion">
+  <span></span>
+              <div className="proyecto__lenguajes">
+                <i className="fa-brands fa-html5"></i>
+                <i className="fa-brands fa-css3-alt"></i>
+                <i className="fa-brands fa-react"></i>
+                <i className="fa-brands fa-node"></i>
+              </div>
+              </div>
+            </div>
+
+            <ProyectoCard
+              titulo="TempCat"
+              descripcion="Sitio web de un server de minecraft hecho para informar a sus usuarios, lo cree para aprender react y diseño web profecional."
+
+
+              
+              texto_url1="Codigo"
+              url1="https://github.com/revay3d/TempCat"
+              codigo={true}
+              info={true}
+
+              texto_url2="Visitar"
+              url2="https://revay3d.github.io/TempCat"
+            />
+
+          </article>
           
           <article className="proyecto__carta">
             <div>
