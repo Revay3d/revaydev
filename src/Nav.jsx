@@ -9,7 +9,7 @@ export default function Nav() {
 
   React.useEffect(() => {
     const handleScroll = () => {
-      setScroll(window.scrollY > 3);
+      setScroll(window.scrollY > 120);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -22,7 +22,7 @@ export default function Nav() {
 
   return (
     <>
-    <nav className={`nav ${scroll ? 'nav--scroll' : ''}`}>
+    <nav className={`nav `}>
       <h1 className='nav__logo'>RevayDev</h1>
       <ul className={`nav__menu ${menuToggle ? 'active' : ''}`}>
         <li><NavHashLink to="/#">Inicio</NavHashLink></li>
@@ -37,7 +37,7 @@ export default function Nav() {
       </span>
     </nav>
 
-<div className={`nav__menu--fondo ${menuToggle ? 'active-fondo' : ''}`}></div>
+<div className={`nav__menu--fondo ${scroll ? 'nav--scroll' : ''} ${menuToggle ? 'active-fondo' : ''}`}></div>
 
 </>
   );
