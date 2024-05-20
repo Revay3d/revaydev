@@ -64,13 +64,13 @@ export default function Inicio() {
 
               <Historia
                 titulo="Creando - Porfolio"
-                fecha="Enero 2024"
+                fecha="Enero 2023"
                 texto="Desarrollo mi portafolio con React, inspirándome en diseños de referencia para crear una web estética y profesional."
               />
 
               <Historia
                 titulo="Estudiando - Backend"
-                fecha="Enero 2024"
+                fecha="Abril 2024"
                 texto="Actualmente, estoy aprendiendo sobre Backend para poder desarrollar sitios web de tiendas en línea y proyectos similares."
               />
             </div>
