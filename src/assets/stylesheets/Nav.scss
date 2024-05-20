@@ -70,18 +70,6 @@
    }
 }
 
-.nav::after{
-    position: absolute;
-    content: "";
-    background: linear-gradient(77deg, rgb(0, 26, 255),  rgb(0, 204, 255), rgb(255, 0, 157),   rgb(0, 204, 255),rgb(0, 26, 255) );
-    filter: blur(1.5px);
-    transform: rotate(40px);
-    top: 0;
-    height: 10px;
-    background-size: 200%;
-    animation: infinite alternate ease-in-out 10s cabesado;
-    inset: 0;
-}
 
 .menu--toggle{
     cursor: pointer;

@@ -15,7 +15,7 @@
 .titulo{
     margin: 100px auto 0;
   display: inline-block;
-  font-size: 70px;
+  font-size: 50px;
   color: transparent;
   background: var(--color_gradiente);
   background-clip: content-box;
@@ -153,11 +153,11 @@ opacity: 1;
     position: relative;
     display: flex;
     flex-flow: row wrap-reverse;
-    line-height: 3.2rem;
+    line-height: 2.5rem;
     gap: 20px;
     justify-content: space-around;
     align-items: center;
-    font-size: 50px;
+    font-size: 40px;
     padding: 200px 10px 100px 10px;
     margin-bottom: 7px;
     font-weight: 500;
@@ -168,7 +168,7 @@ opacity: 1;
     &__img{
         border-radius: 1rem;
         border: 4px solid #fff;
-        width: 250px;
+        width: 200px;
     }
 
 }
@@ -195,6 +195,17 @@ opacity: 1;
   border-radius: 0 0  0.5rem 0.5rem;
 }
 
+.header__flash{
+position: absolute;
+width: 250px;
+height: 250px;
+border-radius: 50%;
+background-color: var(--color_primario);
+filter: blur(160px);
+
+content: "";
+z-index: 10;
+}
 
 
 .header p, img, i{
@@ -215,20 +226,23 @@ opacity: 1;
 .text__job{
 
     font-size: 25px;
+    opacity: 0.5;
   color: var(--mini_letra);
 }
 
 .text__links{
     z-index: 10;
+    margin: 20px 0 0 0 ;
     position: relative;
-     padding: 0 10px;
+     padding: 0 7px;
      display: flex;
      justify-content: space-evenly;
      border-radius: 1rem;
-     width: 170px;
-  border: dashed 3px #ffffff7e;
+     width: 140px;
+  border: dashed 3px #ffffff3a;
+  background-color: #0027414f;
     display: flex;
-    font-size: 25px;
+    font-size: 20px;
     transition: var(--trasition);
     &:hover{
         border-color: var(--color_secundario);
@@ -973,6 +987,16 @@ background-color: #ffffff;
 }
 
 @media (max-width: 700px){
+  .text__links{
+     margin-top: 17px;
+     padding: 7px 10px;
+     border-radius: 0.7rem;
+     width: 170px;
+
+
+}
+
+
   .header::after{
    
     zoom: 3;
@@ -1000,7 +1024,7 @@ background-color: #ffffff;
   }
     .header{
         font-size: 30px;
-        line-height: 2.3rem;
+        line-height: 1.8rem;
     }
 
     .historia__title{

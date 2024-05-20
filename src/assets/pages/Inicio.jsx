@@ -21,7 +21,7 @@ export default function Inicio() {
     <>
 
       <header className="header">
-      
+         <span className="header__flash"></span>
         <div className="header__text">
         
           <p>¡Hola mundo! </p>
