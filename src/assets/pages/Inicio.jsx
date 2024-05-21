@@ -21,7 +21,7 @@ export default function Inicio() {
     <>
 
       <header className="header">
-         <span className="header__flash"></span>
+         <span className="flash flash--normal"></span>
         <div className="header__text">
         
           <p>¡Hola mundo! </p>
@@ -37,7 +37,7 @@ export default function Inicio() {
           </div>
         </div>
 
-        <img className="header__img" src="img/RevayDev.png" alt="RevayDev" />
+      
       </header>
       <div className={`aviso ${scroll ? "ocultar" : " "} `}>
         <i className="fa-solid fa-arrow-down"></i>
@@ -57,7 +57,7 @@ export default function Inicio() {
 
             <div className="historia">
               <Historia
-                titulo="Inicio - Forntend"
+                titulo="Inicio - Frontend"
                 fecha="Julio 2021"
                 texto="Inicié con micro:bit, mi primera web no fue perfecta, pero mejoré y ahora diseño sitios profesionales y atractivos."
               />
