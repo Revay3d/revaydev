@@ -201,9 +201,8 @@ position: absolute;
 width: 250px;
 height: 250px;
 border-radius: 50%;
-animation: flash  2s  infinite alternate;
+animation: flash  1s  infinite alternate;
 filter: blur(160px);
-
 content: "";
 z-index: 10;
 }
@@ -212,7 +211,8 @@ z-index: 10;
 }
 
 .flash--error {
-background-color: rgba(255, 0, 0, 0.445);
+  inset: 0;
+background-color: rgba(255, 0, 0, 0.815);
 }
 @keyframes flash {
    to{
@@ -398,7 +398,7 @@ margin-right: 20px;
 }
 
 .estadisticas__item{
-    border: dashed 3px #ffffff7e;
+    border: solid 2px #ffffff7e;
     width: 150px;
     background: var(--fondo);
     padding: 20px 40px;
@@ -417,7 +417,7 @@ margin-right: 20px;
 
 .item__title{
     font-size: 30px;
-    color: var(--color_primario);
+    color: var(--color_secundario);
 }
 
 .item__numero{
@@ -1005,18 +1005,29 @@ color: var(--color_secundario);
 background-color: #ffffff;
 }
 
+.caja__error{
+  position: relative;
+  display: flex;
+ margin: 200px 0 230px 0;
+  justify-content: center;
+ 
+  width: 100%;
 
+}
 
 .error{
   position: relative;
   align-items: center;
   text-align: center;
   justify-content: center;
-  margin: 200px auto;
   padding: 30px;
   width: 300px;
   border-radius: 1.5rem;
-  background-color: var(--fondo_costraste);
+  background-color: rgba(34, 34, 34, 0.356);
+  border: rgba(255, 0, 0, 0.089) solid 1px;
+ filter: blur(200);
+ z-index: 20;
+  
 
   &__mensaje{
     font-size: 70px;
@@ -1029,10 +1040,13 @@ background-color: #ffffff;
   }
 
   &__botom{
+position: relative;
+z-index: 30;
     margin-top: 10px;
-    background-color: var(--fondo);
+    background-color: rgba(53, 53, 53, 0.26);
     font-size: 14px;
   }
+
 }
 
 
@@ -1091,7 +1105,38 @@ background-color: #ffffff;
 
    
 
+    .caja__error{
+      position: relative;
+      display: flex;
+     margin-top: 200px;
+      justify-content: center;
+     
+      width: 100%;
+    
+    }
+    
+    .error{
+    
+      width:280px;
   
+      
+    
+      &__mensaje{
+        font-size: 70px;
+     
+      }
+    
+      &__descripcion{
+        font-size: 13.5px;
+      
+      }
+    
+      &__botom{
+        margin-top: 10px;
+        font-size: 15px;
+      }
+    
+    }
 }
 
 @media (max-width: 900px) {
