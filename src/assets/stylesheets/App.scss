@@ -1,3 +1,7 @@
+
+
+
+
 // Variables golbales
 .Resaltar{
     color: var(--color_primario);
@@ -184,7 +188,7 @@ opacity: 1;
 }
 
 .header::after{
-  background: url(img/fondo.png);
+  background: url(/img/fondo.png);
   background-repeat: no-repeat;
   zoom: 6;
   background-size: 350px;
