@@ -60,19 +60,22 @@ export default function Inicio() {
                 titulo="Inicio - Frontend"
                 fecha="Julio 2021"
                 texto="Inicié con micro:bit, mi primera web no fue perfecta, pero mejoré y ahora diseño sitios profesionales y atractivos."
+                tipo="secundario"
               />
 
               <Historia
                 titulo="Creando - Porfolio"
                 fecha="Enero 2023"
                 texto="Desarrollo mi portafolio con React, inspirándome en diseños de referencia para crear una web estética y profesional."
+                tipo="secundario"
               />
 
               <Historia
                 titulo="Estudiando - Backend"
                 fecha="Abril 2024"
                 texto="Actualmente, estoy aprendiendo sobre Backend para poder desarrollar sitios web de tiendas en línea y proyectos similares."
-              />
+                
+             />
             </div>
           </div>
           <div className="estadisticas">
@@ -80,7 +83,7 @@ export default function Inicio() {
 
             <Estadisticas titulo="Proyectos" numero="5" />
 
-            <Estadisticas titulo="Experiencia" numero="+3" letra="años" />
+            <Estadisticas titulo="Experiencia" numero="+3" />
           </div>
         </div>
 

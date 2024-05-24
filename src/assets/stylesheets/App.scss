@@ -362,6 +362,10 @@ margin-right: 20px;
 }
 
 
+.historia__item--secundario{
+  opacity: 0.5;
+}
+
 .historia__title{
     line-height: 2.7rem;
     font-size: 40px;
@@ -428,9 +432,9 @@ margin-right: 20px;
 
 .item__letra{
     position: relative;
-    bottom: 5px;
+    font-family: 'Digital-7';
     font-weight: 500;
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+   
 }
 
 
