@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavHashLink } from 'react-router-hash-link';
 import Flash from '../components/Flash';
+import "../stylesheets/App.scss";
 
 export default function Error() {
   return (

@@ -21,14 +21,16 @@ export default function Inicio() {
     <>
 
       <header className="header">
-         <span className="flash flash--normal"></span>
+   
+       
+         <div className="contraste"></div>
         <div className="header__text">
         
           <p>¡Hola mundo! </p>
           <p>
             Soy <samp className="text__name"> RevayDev</samp>
           </p>
-          <p className="text__job">Frontend Developer.</p>
+          <span className="text__job">Frontend Developer.</span>
           <div className="text__links">
           <a href="https://discord.com/users/1066481602403766313" target="_blank">  <i className="fa-brands fa-discord"></i> </a>
            <a href="https://www.youtube.com/channel/UCE7NWSOlaZ4IOXfIuBip_kQ" target="_blank"> <i className="fa-brands fa-youtube"></i> </a>
@@ -36,13 +38,16 @@ export default function Inicio() {
            <a href="https://www.paypal.com/donate/?hosted_button_id=BUY65JN7NWM2U" target="_blank"> <i className="fa-brands fa-paypal"></i> </a>
           </div>
         </div>
-
+        <span className="flash flash--normal"></span>
+      
       
       </header>
+      
+
       <div className={`aviso ${scroll ? "ocultar" : " "} `}>
         <i className="fa-solid fa-arrow-down"></i>
       </div>
-      <main className="main">
+      <main>
         <div className="contenedor">
           <div className="main__sobre_mi" id="sobre_mi">
             <h2 className="sobre_mi__title">Sobre Mi</h2>
