@@ -98,49 +98,11 @@ titulo="PROYECTOS"
        
         <section className="proyectos" id="proyectos">
 
-        <article className="proyecto__carta">
-            <div>
-            <span className="proyecto__estado">
-                <h2>¡Nuevo!</h2>
-              </span>
-              <img
-                className="proyecto__imagen"
-                src="img/discord_js.webp"
-                alt="Discord.py"
-              />
-
-            <div className="proyecto__informacion">
-            <div className="proyecto__version">Version 1.0</div>
-            <div className="proyecto__lenguajes">
-
-              <i className="fa-brands fa-js"></i>
-              <i className="fa-brands fa-node-js"></i>
-       
-
-            </div>
-          </div>
-            </div>
-
-            <ProyectoCard
-              titulo="Discord.js"
-              descripcion="Bot Discord v14 por RevayDev: envía mensajes de prefixs y slash commands sensillos, no tiene muchos comandos porque es un codigo base."
-              texto_url1="Codigo"
-              url1="https://github.com/revay3d/Discord.js"
-             
-            
-              codigo={true}
-            />
-          </article>
-
-
-   
-
-          
-
-
-          
 
           <article className="proyecto__carta">
+          <span className="proyecto__estado">
+                <h2>¡Nuevo!</h2>
+              </span>
             <div>
               <img
                 className="proyecto__imagen"
@@ -148,7 +110,8 @@ titulo="PROYECTOS"
                 alt="SafeBox"
               />
  <div className="proyecto__informacion">
-  <span></span>
+
+  <div className="proyecto__version">Version 1.0</div>
               <div className="proyecto__lenguajes">
                 <i className="fa-brands fa-python"></i>
                 
@@ -233,39 +196,7 @@ titulo="PROYECTOS"
 
           </article>
           
-          <article className="proyecto__carta">
-            <div>
-              <img
-                className="proyecto__imagen"
-                src="img/card.webp"
-                alt="Card_Contacto"
-              />
- <div className="proyecto__informacion">
-  <span></span>
-              <div className="proyecto__lenguajes">
-                <i className="fa-brands fa-html5"></i>
-                <i className="fa-brands fa-css3-alt"></i>
-              </div>
-            </div>
-            </div>
-
-            <ProyectoCard
-              titulo="Card Contacto"
-              descripcion="Código HTML y CSS para perfil personal con enlaces a redes sociales, ideal para principiantes que decean aprender.
-
-
-              "
-              texto_url1="Codigo"
-              url1="https://github.com/revay3d/card"
-              codigo={true}
-              info={true}
-
-              texto_url2="Visitar"
-              url2="https://revay3d.github.io/card"
-            />
-
-          </article>
-
+     
          
 
         </section>

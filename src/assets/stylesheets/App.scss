@@ -29,98 +29,6 @@ body{
   -webkit-text-fill-color: transparent;
 }
 
-body.loader{
-  overflow-y: hidden;
-}
-
-.loader{
-  animation: carga 2s;
-}
-
-@keyframes carga{
-  0%{
-    opacity: 1;
-  }
-
-  50%{
-    opacity: 0;
-   
-  }
-
-  100%{
-    display: none;
-  }
-}
-
-.loadericon{
-  transition: 1s;
-  
-}
-
-body.loader .loadericon{
-  opacity: 0;
-
-}
-.loadericon {
-  opacity: 1;
-  position: fixed; 
-  top: 0;
-  left: 0; 
-  width: 100vw; 
-  height: 100vh;
-  gap: 7px; 
-  display: flex; 
-  justify-content: center; 
-  flex-direction: column;
-  align-items: center; 
-  text-align: center;
-  background-color: var(--fondo); 
-  z-index: 9999;
-}
-
-.loadericon h1 {
-  margin: 0;
-  position: relative;
-  left: 7px;
-
-}
-.loadericon div {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  background: var(--color_gradiente);
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  animation: loader infinite linear 3s;
-  border-radius: 50%;
-    overflow: hidden;
-
-}
-
-@keyframes loader {
-  0%{
-      transform: rotate(0);
-  }
-
-  50%{
-      transform: rotate(180deg);
-  }
-
-  100%{
-      transform: rotate(360deg);
-  }
-}
-.loadericon div::before {
-  position: absolute;
-  content: "";
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  background: var(--fondo);
-}
-
-
 
 
 .aviso{
@@ -157,9 +65,9 @@ z-index: 30;
 
 .contraste{
   content: "";
-  background: url(/img/background-header.svg);
+  background: url(/img/background-header.webp);
   inset: 0;
- top: 400px;
+ top: 500px;
 left: -120px;
   position: absolute;
   z-index: 10;
@@ -179,7 +87,7 @@ left: -120px;
     justify-content: space-around;
     align-items: center;
     font-size: 40px;
-    padding: 200px 10px 200px 10px;
+    padding: 200px 10px 300px 10px;
     margin-bottom: 7px;
     font-weight: 500;
     border-bottom-left-radius: 1.5rem;
@@ -206,7 +114,7 @@ left: -120px;
 }
 
 .header::after{
-  background: url(/img/fondo.png);
+  background: url(/img/fondo.webp);
   background-repeat: no-repeat;
   zoom: 6;
   background-size: 350px;
@@ -1044,6 +952,7 @@ background-color: #ffffff;
 }
 
 .error{
+  
   position: relative;
   align-items: center;
   text-align: center;
@@ -1068,6 +977,7 @@ background-color: #ffffff;
   }
 
   &__botom{
+    color: white;
 position: relative;
 z-index: 30;
     margin-top: 10px;
