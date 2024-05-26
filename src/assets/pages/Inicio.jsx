@@ -7,6 +7,8 @@ import Titulo from "../components/Titulo";
 import Icono from "../components/Icono";
 import SeccionExtra from "../components/SeccionExtra";
 import ConsejosCart from "../components/ConsejosCart";
+import Proyectos from '../pages/Proyectos'
+import { NavHashLink } from 'react-router-hash-link';
 export default function Inicio() {
   const [scroll, setScroll] = React.useState(false);
 
@@ -23,7 +25,7 @@ export default function Inicio() {
       <header className="header">
    
        
-         <div className="contraste"></div>
+       
         <div className="header__text">
         
           <p>¡Hola mundo! </p>
@@ -200,7 +202,10 @@ titulo="PROYECTOS"
          
 
         </section>
-
+        <div className="caja">
+       
+        <NavHashLink to="Proyecto"> <button className="BotomMasInformacion"><span>Mas Proyectos</span></button></NavHashLink>
+        </div>
         <Titulo 
 titulo="EXTRAS"
 />
@@ -304,8 +309,9 @@ url2="https://github.com/"
 
      </div>
 
-    
+
      </article>
+  
 
      <article className="extra">
      <SeccionExtra titulo="Contáctame" descripcion="¿Quieres contactarme? Si deseas que cree un sitio web para ti o si estás interesado en que promocione tus servicios o productos, puedes hacerlo a través de los siguientes medios disponibles." />
