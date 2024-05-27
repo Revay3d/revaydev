@@ -7,7 +7,8 @@ import Titulo from "../components/Titulo";
 import Icono from "../components/Icono";
 import SeccionExtra from "../components/SeccionExtra";
 import ConsejosCart from "../components/ConsejosCart";
-import Proyectos from '../pages/Proyectos'
+import Footer from "../components/Footer";
+
 import { NavHashLink } from 'react-router-hash-link';
 export default function Inicio() {
   const [scroll, setScroll] = React.useState(false);
@@ -314,7 +315,7 @@ url2="https://github.com/"
   
 
      <article className="extra">
-     <SeccionExtra titulo="Contáctame" descripcion="¿Quieres contactarme? Si deseas que cree un sitio web para ti o si estás interesado en que promocione tus servicios o productos, puedes hacerlo a través de los siguientes medios disponibles." />
+     <SeccionExtra titulo="Contáctame" descripcion="¿Quieres contactarme? Estoy listo para hacer un proyecto grande y moderno." />
 
 
 
@@ -356,20 +357,7 @@ url2="https://github.com/"
      </article>
       </main>
 
-      <footer class="footer">
-
-    <h1 class="footer__texto"> © 2024 RevayDev - Hecho con 💙</h1>
-    <div class="footer__links">
-      <a href="https://discord.com/users/1066481602403766313" target="_blank" alt="Discord"><i
-          class="fa-brands fa-discord"></i></a>
-      <a href="https://www.youtube.com/channel/UCE7NWSOlaZ4IOXfIuBip_kQ" target="_blank" alt="Youtube"><i
-          class="fa-brands fa-youtube"></i></a>
-      <a href="https://github.com/revay3d" target="_blank"><i class="fa-brands fa-github" alt="Github"></i></a>
-      <a href="https://www.paypal.com/donate/?hosted_button_id=BUY65JN7NWM2U" target="_blank" alt="Paypal"> <i
-          class="fa-brands fa-paypal"></i></a>
-    </div>
-
-  </footer>
+      <Footer/>
     </>
   );
 }

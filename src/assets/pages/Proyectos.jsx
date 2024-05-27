@@ -1,19 +1,26 @@
 import React from 'react'
 import ProyectoCard from "../components/ProyectoCard";
-import Titulo from "../components/Titulo";
-import "../stylesheets/App.scss";
+import Footer from '../components/Footer';
+import "../stylesheets/PaginasRandom.scss";
+import { NavHashLink } from 'react-router-hash-link';
 
 export default function Error() {
   return (
    <div>
 <header className='header--page'>
 <div className="header__text">
-        
 <h1 className='Titulo__Page'>Proyectos</h1>
+<div className='informacion__general'>
+
+<div className='Parte'><span>Proyectos: 4 </span></div>
+<div className='Parte'><span>En desarrollo: 2</span></div>
+<div className='Parte'><span>Colavorativos: 1</span></div>
+
+
+</div>
       
       </div>
-    
-
+  
 </header>
        
         <section className="proyectos" id="proyectos">
@@ -41,7 +48,7 @@ export default function Error() {
 
             <ProyectoCard
               titulo="Discord.js"
-              descripcion="Bot de discord.js v14, codigo basico con comandos prefixs y comandos SlachCommands solofunciona para uso personal."
+              descripcion="Bot de discord.js v14, codigo basico con comandos prefixs y comandos SlachCommands solo funciona para uso personal."
               texto_url1="Codigo"
               url1="https://github.com/revay3d/Discord.js"
               codigo={true}
@@ -147,21 +154,11 @@ export default function Error() {
          
 
         </section>
-
-        <footer class="footer">
-
-<h1 class="footer__texto"> © 2024 RevayDev - Hecho con 💙</h1>
-<div class="footer__links">
-  <a href="https://discord.com/users/1066481602403766313" target="_blank" alt="Discord"><i
-      class="fa-brands fa-discord"></i></a>
-  <a href="https://www.youtube.com/channel/UCE7NWSOlaZ4IOXfIuBip_kQ" target="_blank" alt="Youtube"><i
-      class="fa-brands fa-youtube"></i></a>
-  <a href="https://github.com/revay3d" target="_blank"><i class="fa-brands fa-github" alt="Github"></i></a>
-  <a href="https://www.paypal.com/donate/?hosted_button_id=BUY65JN7NWM2U" target="_blank" alt="Paypal"> <i
-      class="fa-brands fa-paypal"></i></a>
-</div>
-
-</footer>
+        <div className="caja">
+       
+       <NavHashLink to="/"> <button className="BotomMasInformacion"><span>Volver al inicio</span></button></NavHashLink>
+       </div>
+        <Footer/>
 
    </div>
   )

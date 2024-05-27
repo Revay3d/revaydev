@@ -1,0 +1,77 @@
+
+
+.Titulo__Page{
+    color: var(--color_secundario);
+    font-size: 100px;
+    line-height: 3rem;
+  }
+  
+  
+  .header--page{
+ background: var(--fondo_costraste);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 160px 0 30px 0;
+  border-bottom: rgba(255, 255, 255, 0.185) solid 2px;
+  border-radius: 1rem;
+  
+  
+  
+  
+  
+  }
+  
+  .BotomMasInformacion{
+    background: var(--color_secundario);
+    border-radius: 20px 2px;
+    border: 0;
+    position: relative;
+    transition: var(--trasition);
+  
+    span{
+      font-weight: 500;
+      font-size: 20px;
+      position: relative;
+      z-index: 10;
+    }
+  
+    
+  }
+
+.informacion__general{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 7px;
+  margin-top: 30px;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+  padding: 20px;
+ 
+
+}
+
+.Parte{
+  font-size: 15px;
+  position: relative;
+  padding: 10px;
+  border-radius: 20px 2px;
+  background: var(--color_primario);
+}
+
+.Parte::after{
+  position: absolute;
+  inset: 2px;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.822);
+  border-radius: 20px 2px;
+
+}
+
+@media (max-width: 700px){
+  .Titulo__Page{
+    font-size: 60px;
+  }
+  }

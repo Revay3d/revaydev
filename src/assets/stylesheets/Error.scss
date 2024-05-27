@@ -1,0 +1,61 @@
+.caja__error{
+  position: relative;
+  display: flex;
+ margin: 200px 0 230px 0;
+  justify-content: center;
+ 
+  width: 100%;
+
+}
+
+
+.error{
+  
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 1.5rem 1.5rem  0 1.5rem;
+    background-color: rgba(34, 34, 34, 0.356);
+    border: rgba(255, 0, 0, 0.089) solid 1px;
+   filter: blur(200);
+   z-index: 20;
+    
+  
+    &__mensaje{
+      font-size: 70px;
+      font-weight: bold;
+    }
+  
+    &__descripcion{
+      font-size: 15px;
+      opacity: 0.3;
+    }
+  
+    &__botom{
+      color: white;
+  position: absolute;
+  z-index: 30;
+  right: -1px;
+      margin-top: 10px;
+      background-color: rgb(49, 14, 14);
+      border-radius: 20px 1px;
+    border: rgba(255, 0, 0, 0.089) solid 1px;
+      font-size: 14px;
+      animation: errorBotom 1s infinite alternate;
+    }
+  
+  }
+  
+  @keyframes errorBotom {
+    to{
+        background-color:  rgb(49, 14, 14);
+    }
+    from{
+        background-color:  rgb(31, 11, 11);
+    }
+  }
