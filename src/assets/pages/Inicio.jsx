@@ -51,7 +51,7 @@ export default function Inicio() {
           <a href="https://discord.com/users/1066481602403766313" target="_blank">  <i className="fa-brands fa-discord"></i> </a>
            <a href="https://www.youtube.com/channel/UCE7NWSOlaZ4IOXfIuBip_kQ" target="_blank"> <i className="fa-brands fa-youtube"></i> </a>
            <a href="https://github.com/revay3d" target="_blank"> <i className="fa-brands fa-github"></i> </a>
-           <a href="https://www.paypal.com/donate/?hosted_button_id=BUY65JN7NWM2U" target="_blank"> <i className="fa-brands fa-paypal"></i> </a>
+        
         
           </div>
           <CorreoCopy initialEmail= "revaydev17@gmail.com" />

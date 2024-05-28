@@ -24,7 +24,7 @@ export default function Error() {
 
 <div className='Parte' data-id="1"><span>Proyectos: 4 </span></div>
 <div className='Parte 'data-id="2"><span>En desarrollo: 2</span></div>
-<div className='Parte'data-id="3"><span>Colavorativos: 1</span></div>
+<div className='Parte'data-id="3"><span>Colaborativos: 1</span></div>
 
 
 </div>

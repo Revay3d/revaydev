@@ -25,7 +25,7 @@ const EmailForm = ({ initialEmail }) => {
 
   return (
     <div className='copy'>
-      <input className='copy_gmail'
+      <input  className={`copy_gmail ${copySuccess ? 'copied' : ''}`} 
         ref={inputRef}
         type="email"
         defaultValue={initialEmail}

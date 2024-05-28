@@ -1,4 +1,5 @@
 import React from "react";
+import Icono from "./Icono";
 
 export default function Footer() {
   return (
@@ -32,14 +33,41 @@ export default function Footer() {
       </div>
       </div>
 
-          <div className="footer__sobremi">
-            <span className="sobremi__title">Sobre Mi</span>
-            <p className="sobremi__descripcion">
-              RevayDev es un seudonimo es decir un nombre artistico. mi nombre
-              es Roberto Jimenez y tengo 16 años soy de nacionalidad colombiana.
-              y poseo una gran capacidad para trabajar tanto en equipo como de
-              manera independiente.{" "}
-            </p>
+          <div className="footer__tegnoligias">
+            <span className="tegnoligias__title">Se utilizo</span>
+          <div className="tegnoligias__lenguajes">
+
+          <Icono 
+     icono="html5" 
+   
+
+     />
+
+<Icono 
+     icono="css3-alt" 
+   
+
+     />
+     <Icono 
+     icono="js" 
+   
+
+     />
+
+<Icono 
+     icono="sass" 
+   
+
+     />
+
+<Icono 
+     icono="react" 
+   
+
+     />
+     
+
+          </div>
           </div>
      
         <div className="footer__derechos">© 2024 RevayDev - Hecho con 💙</div>

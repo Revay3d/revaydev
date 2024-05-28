@@ -23,6 +23,7 @@
   --fondo_costraste: rgb(0, 6, 15);
   --fondo_contraste2:rgb(0, 11, 27);
   --color_secundario:  rgb(220, 80, 255);
+  --color_secundario_oscuro:  rgb(79, 56, 85);
   --color_primario: rgb(0, 119, 255);
   --color_terciario: #6857ff;
   --color_gradiente: linear-gradient(77deg, rgb(0, 26, 255), rgb(255, 0, 157));

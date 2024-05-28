@@ -182,6 +182,7 @@ background-color: rgba(255, 0, 0, 0.815);
 .copy_gmail{
   background-color: #52525228;
   backdrop-filter: blur(10px);
+ 
   border: none;
 
 }
@@ -197,21 +198,18 @@ background-color: rgba(255, 0, 0, 0.815);
 
 .text__links{
     z-index: 50;
-  
     position: relative;
-    
      display: flex;
-     justify-content: space-evenly;
+     justify-content: center;
      border-radius: 2px 20px;
-     width: 200px;
-
+    gap: 20px;
   background-color: #52525228;
  backdrop-filter: blur(10px);
 
     display: flex;
     font-size: 20px;
   transition: var(--trasition);
-  padding: 7px;
+  padding: 10px 20px;
     transition: var(--trasition);
     &:hover{
         border-color: var(--color_secundario);
@@ -761,7 +759,13 @@ padding: 20px;
     padding: 15px;
     border-radius: 20px 2px;
     color: #b8b8b8;
+    transition: var(--trasition);
+    cursor: pointer;
 
+  }
+
+  .icon:hover{
+color: var(--color_primario);
   }
   
 
@@ -957,7 +961,7 @@ form{
   left: 70px;
 }
 
-.footer__sobremi{
+.footer__tegnoligias{
   padding: 40px;
   width: 300px;
   margin: 10px;
@@ -967,14 +971,12 @@ form{
   align-items: start;
   text-align: start;
   background-color: var(--fondo_contraste2);
-  .sobremi__title{
+  .tegnoligias__title{
     font-size: 30px;
     font-weight: bold;
   }
 
-  .sobremi__descripcion{
-    color: var(--mini_letra);
-  }
+
 }
 
 .contacto__formulario {
@@ -1047,6 +1049,23 @@ justify-content: space-around;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 padding: 30px 0;
+
+.icon{
+  font-size: 40px;
+  background: none;
+  margin: 0;
+  width: 0;
+}
+
+.tegnoligias__lenguajes{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
 }
 
 
@@ -1090,11 +1109,16 @@ border-color: var(--color_primario);
   flex-direction: column;
 
  a{
+ 
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
+
+  
  }
+
+ 
 
   div{
     display: flex;
@@ -1272,6 +1296,8 @@ border-color: var(--color_primario);
   transition: var(--trasition);
   color: white;
   padding: 12px;
+  align-items: center;
+  text-align: center;
   border-radius: 20px 2px;
 }
 
@@ -1285,7 +1311,11 @@ border-color: var(--color_primario);
  
 }
 
-
+.copy_gmail.copied{
+   
+  background: var(--color_secundario_oscuro);
+border: none;
+}
 .copy_botom.copied{
  
   background: var(--color_secundario);
