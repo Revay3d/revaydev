@@ -5,7 +5,17 @@ import "../stylesheets/PaginasRandom.scss";
 import { NavHashLink } from 'react-router-hash-link';
 
 export default function Error() {
+  const handleClick = () => {
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    }, 0);
+  };
+
   return (
+    
    <div>
 <header className='header--page'>
 <div className="header__text">
@@ -23,7 +33,7 @@ export default function Error() {
   
 </header>
        
-        <section className="proyectos" id="proyectos">
+        <section className="proyectos" id="proyecto">
 
 
           <article className="proyecto__carta">
@@ -156,7 +166,7 @@ export default function Error() {
         </section>
         <div className="caja">
        
-       <NavHashLink to="/"> <button className="BotomMasInformacion"><span>Volver al inicio</span></button></NavHashLink>
+       <NavHashLink to="/"> <button className="BotomMasInformacion" onClick={handleClick}><span>Volver al inicio</span></button></NavHashLink>
        </div>
         <Footer/>
 

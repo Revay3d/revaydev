@@ -1,10 +1,12 @@
 import React from 'react'
 import { NavHashLink } from 'react-router-hash-link';
 import Flash from '../components/Flash';
+import Footer from "../components/Footer";
 import "../stylesheets/Error.scss";
 
 export default function Error() {
   return (
+   <>
     <div className='caja__error'>
     <div className='error' >
         <Flash Tipo="error"/>
@@ -13,5 +15,8 @@ export default function Error() {
       < NavHashLink to="/#" >  <button className='error__botom'>Volver al inicio</button> </NavHashLink>
     </div>
     </div>
+
+<Footer/>
+</>
   )
 }

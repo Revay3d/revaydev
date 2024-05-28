@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
     <Nav />
-  <Routes>
+  <Routes  scrollBehavior="smooth">
     <Route path="/" element={<Inicio />} />
     <Route path="*" element={<Error />} />
     <Route path="Proyecto" element={<Proyectos />} />

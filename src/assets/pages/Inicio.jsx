@@ -8,8 +8,19 @@ import Icono from "../components/Icono";
 import SeccionExtra from "../components/SeccionExtra";
 import ConsejosCart from "../components/ConsejosCart";
 import Footer from "../components/Footer";
+import CorreoCopy from "../components/CorreoCopy";
 
 import { NavHashLink } from 'react-router-hash-link';
+
+const handleClick = () => {
+  setTimeout(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }, 0);
+};
+
 export default function Inicio() {
   const [scroll, setScroll] = React.useState(false);
 
@@ -33,12 +44,17 @@ export default function Inicio() {
           <p>
             Soy <samp className="text__name"> RevayDev</samp>
           </p>
-          <span className="text__job">Frontend Developer.</span>
+
+          <span className="text__job">Front-End Developer.</span>
+          <div className="links">
           <div className="text__links">
           <a href="https://discord.com/users/1066481602403766313" target="_blank">  <i className="fa-brands fa-discord"></i> </a>
            <a href="https://www.youtube.com/channel/UCE7NWSOlaZ4IOXfIuBip_kQ" target="_blank"> <i className="fa-brands fa-youtube"></i> </a>
            <a href="https://github.com/revay3d" target="_blank"> <i className="fa-brands fa-github"></i> </a>
            <a href="https://www.paypal.com/donate/?hosted_button_id=BUY65JN7NWM2U" target="_blank"> <i className="fa-brands fa-paypal"></i> </a>
+        
+          </div>
+          <CorreoCopy initialEmail= "revaydev17@gmail.com" />
           </div>
         </div>
         <span className="flash flash--normal"></span>
@@ -52,7 +68,7 @@ export default function Inicio() {
       </div>
       <main>
         <div className="contenedor">
-          <div className="main__sobre_mi" id="sobre_mi">
+          <section className="main__sobre_mi" id="sobre_mi">
             <h2 className="sobre_mi__title">Sobre Mi</h2>
             <p className="sobre_mi__text">
               RevayDev es un seudonimo es decir un nombre artistico. mi nombre
@@ -85,7 +101,7 @@ export default function Inicio() {
                 
              />
             </div>
-          </div>
+          </section>
           <div className="estadisticas">
             <Estadisticas titulo="Clientes" numero="2" />
 
@@ -95,11 +111,13 @@ export default function Inicio() {
           </div>
         </div>
 
+<div  id="proyectos"></div>
+
 <Titulo 
 titulo="PROYECTOS"
 />
        
-        <section className="proyectos" id="proyectos">
+        <section className="proyectos" >
 
 
           <article className="proyecto__carta">
@@ -205,7 +223,7 @@ titulo="PROYECTOS"
         </section>
         <div className="caja">
        
-        <NavHashLink to="Proyecto"> <button className="BotomMasInformacion"><span>Mas Proyectos</span></button></NavHashLink>
+        <NavHashLink to="Proyecto" onClick={handleClick}> <button className="BotomMasInformacion"><span>Mas Proyectos</span></button></NavHashLink>
         </div>
         <Titulo 
 titulo="EXTRAS"
@@ -315,45 +333,42 @@ url2="https://github.com/"
   
 
      <article className="extra">
+      <section  id="Contacto">
      <SeccionExtra titulo="Contáctame" descripcion="¿Quieres contactarme? Estoy listo para hacer un proyecto grande y moderno." />
 
+<div className="caja_contacto">
+     <div class="footer__links">
+              <div>
+                <a
+                  href="https://discord.com/users/1066481602403766313"
+                  target="_blank"
+                  alt="Discord"
+                >
+                  <i class="fa-brands fa-discord"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UCE7NWSOlaZ4IOXfIuBip_kQ"
+                  target="_blank"
+                  alt="Youtube"
+                >
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://github.com/revay3d" target="_blank">
+                  <i class="fa-brands fa-github" alt="Github"></i>
+                </a>
+              </div>
+      
+      </div>
+     <CorreoCopy initialEmail= "revaydev17@gmail.com" />
 
-
-     <div className="conteniner_cards" id="Contacto">
-  <div className="contacto__formulario elemento">
-    <form action="https://formspree.io/f/xgejzykw" method="POST">
-
-      <label className="formulario__texto" htmlFor="name">Nombre Completo</label>
-      <input className="formulario__celda" type="text" placeholder="RevayDev" id="name" name="name" required />
-
-      <label className="formulario__texto" htmlFor="email">Correo</label>
-      <input className="formulario__celda" type="email" placeholder="revaydev17@gmail.com" id="email" name="email" required />
-
-      <label className="formulario__texto" htmlFor="coments">Mensage</label>
-      <textarea className="formulario__celda" placeholder="Mensage" id="coments" name="message" required></textarea>
-      <input className="formulario__enviar" type="submit" value="Enviar" />
-      <input type="hidden" name="_next" value="https://github.com/Revay3d/revaydev/formulario.html" />
-      <input type="hidden" name="_captcha" value="false" />
-    </form>
-  </div>
-
-  <span className="separar">O</span>
-
-  <div className="contacto__links elemento">
-    <span className="contacto__link contacto__link--correo"> <i className="fa-solid fa-envelope"></i>
-      <span className="contacto__link--texto">revaydev17@gmail.com</span></span>
-
-    <span className="contacto__link contacto__link--x"><i className="fa-brands fa-x-twitter"></i>
-      <span className="contacto__link--texto">@RevayDev</span></span>
-
-    <span className="contacto__link contacto__link--discord"> <i className="fa-brands fa-discord"></i>
-      <span className="contacto__link--texto">@revaydev</span></span>
-  </div>
-</div>
+     </div>
+   
 
 
 
 
+
+</section>
      </article>
       </main>
 

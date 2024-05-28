@@ -1,20 +1,94 @@
-import React from 'react'
+import React from "react";
 
 export default function Footer() {
   return (
     <footer class="footer">
+     
+          <div className="footer__informacion">
+            <h1 className="informacion__name">RevayDev</h1>
+            <p className="informacion_description">Front-end Developer</p>
 
-<h1 class="footer__texto"> © 2024 RevayDev - Hecho con 💙</h1>
-<div class="footer__links">
-  <a href="https://discord.com/users/1066481602403766313" target="_blank" alt="Discord"><i
-      class="fa-brands fa-discord"></i></a>
-  <a href="https://www.youtube.com/channel/UCE7NWSOlaZ4IOXfIuBip_kQ" target="_blank" alt="Youtube"><i
-      class="fa-brands fa-youtube"></i></a>
-  <a href="https://github.com/revay3d" target="_blank"><i class="fa-brands fa-github" alt="Github"></i></a>
-  <a href="https://www.paypal.com/donate/?hosted_button_id=BUY65JN7NWM2U" target="_blank" alt="Paypal"> <i
-      class="fa-brands fa-paypal"></i></a>
-</div>
+            <div class="footer__links">
+              <div>
+                <a
+                  href="https://discord.com/users/1066481602403766313"
+                  target="_blank"
+                  alt="Discord"
+                >
+                  <i class="fa-brands fa-discord"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UCE7NWSOlaZ4IOXfIuBip_kQ"
+                  target="_blank"
+                  alt="Youtube"
+                >
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://github.com/revay3d" target="_blank">
+                  <i class="fa-brands fa-github" alt="Github"></i>
+                </a>
+              </div>
+      
+      </div>
+      </div>
 
-</footer>
-  )
+          <div className="footer__sobremi">
+            <span className="sobremi__title">Sobre Mi</span>
+            <p className="sobremi__descripcion">
+              RevayDev es un seudonimo es decir un nombre artistico. mi nombre
+              es Roberto Jimenez y tengo 16 años soy de nacionalidad colombiana.
+              y poseo una gran capacidad para trabajar tanto en equipo como de
+              manera independiente.{" "}
+            </p>
+          </div>
+     
+        <div className="footer__derechos">© 2024 RevayDev - Hecho con 💙</div>
+  
+      <div className="contacto__formulario elemento">
+        <form action="https://formspree.io/f/xgejzykw" method="POST">
+          <label className="formulario__texto" htmlFor="name">
+            Nombre Completo
+          </label>
+          <input
+            className="formulario__celda"
+            type="text"
+            placeholder="RevayDev"
+            id="name"
+            name="name"
+            required
+          />
+
+          <label className="formulario__texto" htmlFor="email">
+            Correo
+          </label>
+          <input
+            className="formulario__celda"
+            type="email"
+            placeholder="revaydev17@gmail.com"
+            id="email"
+            name="email"
+            required
+          />
+
+          <label className="formulario__texto" htmlFor="coments">
+            Mensage
+          </label>
+          <textarea
+            className="formulario__celda"
+            placeholder="Mensage"
+            id="coments"
+            name="message"
+            required
+          ></textarea>
+          <input className="formulario__enviar" type="submit" value="Enviar" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://github.com/Revay3d/revaydev/formulario.html"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+        </form>
+      </div>
+    </footer>
+  );
 }
