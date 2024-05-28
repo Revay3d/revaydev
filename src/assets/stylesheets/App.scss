@@ -61,11 +61,14 @@ z-index: 30;
     opacity: 0;
 }
 
+
 .BotomMasInformacion::after{
   inset: 2px;
   border-radius: 20px 2px;
   content: "";
 position: absolute;
+color: white;
+
   background-color: rgba(0, 0, 0, 0.74);
   
 }
@@ -162,6 +165,7 @@ background-color: rgba(255, 0, 0, 0.815);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900;
+    line-height: 2rem;
 }
 
 .links{
@@ -171,11 +175,19 @@ background-color: rgba(255, 0, 0, 0.815);
  
   justify-content: center;
   flex-flow: row wrap;
+
+.copy_gmail{
+  background-color: #52525228;
+  backdrop-filter: blur(10px);
+  border: none;
+
+}
+
 }
 
 .text__job{
 
-    font-size: 25px;
+    font-size: 20px;
     opacity: 0.5;
   color: var(--mini_letra);
 }
@@ -501,12 +513,24 @@ margin-right: 20px;
    top: 10px;
    left: 10px;
     opacity: 0.7;
-    background: #b4b4b43b;
+    background: var(--color_primario);
     color: #ffffff;
     padding: 7px 20px;
-    border-bottom-right-radius: 7px;
-    border-top-left-radius: 30px;
-    border: solid var(--color_primario) 2px;
+    border-radius: 20px 2px;
+    border: solid var(--color_primario) 1px;
+
+    span{
+      position: relative;
+      z-index: 10;
+    }
+  }
+
+  .proyecto__version::after{
+    position: absolute;
+    content: "";
+    inset: 1px;
+    border-radius: 20px 2px;
+    background-color: #000000c5;
   }
 
   .proyecto__lenguajes {
@@ -532,7 +556,7 @@ margin-right: 20px;
   }
   
   .proyecto__descripcion {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 15px;
     color: var(--mini_letra);
   text-align: start;
@@ -548,6 +572,7 @@ margin-right: 20px;
     justify-content: center;
     gap: 20px;
     flex-flow: row wrap;
+    cursor: pointer;
     & a:hover{
       color: #fff;
     }
@@ -714,7 +739,7 @@ padding: 20px;
   
   .conteniner_iconos {
     margin-top: 50px;
-    padding: 0 50px;
+    padding: 0 300px;
     justify-content: center;
     gap: 20px;
     display: flex;
@@ -726,15 +751,14 @@ padding: 20px;
     align-items: center;
     text-align: center;
     display: flex;
-    font-size: 80px;
+    font-size: 70px;
     flex-flow: column;
     background-color: var(--fondo_costraste);
-    width: 150px;
-    padding: 20px;
+    width: 120px;
+    padding: 15px;
     border-radius: 20px 2px;
+    color: #b8b8b8;
 
-  color: #b8b8b8;
-    bottom: 200px;
   }
   
 
@@ -988,9 +1012,11 @@ form{
     margin: 0;
     background: var(--fondo_costraste);
     padding: 5px;
+   
     border-radius: 2px 20px;
   }
   .copy_gmail{
+    border: none;
     background: var(--fondo_costraste);
   }
   
@@ -1042,12 +1068,9 @@ transition: 0.5s;
 width: 20px;
 min-height: 20px;
 font-size: 15px;
-background-color: var(--fondo);
 border-radius: 50%;
 padding: 10px;
-text-align: center;
-justify-content: center;
-border:  transparent 1px solid;
+
 
 }
 
@@ -1080,6 +1103,8 @@ border-color: var(--color_primario);
 
 
 @media (max-width: 700px){
+ 
+
 .footer{
   padding-bottom: 70px;
 }
@@ -1192,6 +1217,16 @@ border-color: var(--color_primario);
 }
 
 @media (max-width: 900px) {
+  .conteniner_iconos {
+    margin-top: 50px;
+    padding: 0;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    font-size: 100px;
+    flex-flow: row wrap;
+  }
+
     .sobre_mi__text,   .historia__text{
         width: 95%;
     }
@@ -1223,9 +1258,7 @@ border-color: var(--color_primario);
 
 .copy{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  
   flex-flow: row wrap;
   gap: 10px;
 
@@ -1234,9 +1267,8 @@ border-color: var(--color_primario);
 .copy_gmail{
   font-size: 20px;
   transition: var(--trasition);
-  
+  color: white;
   padding: 12px;
-  border: none;
   border-radius: 20px 2px;
 }
 
@@ -1244,14 +1276,16 @@ border-color: var(--color_primario);
   transition: var(--trasition);
   font-size: 14px;
   background: var(--color_primario);
-  border-radius: 20px 2px;
+  border-radius: 2px 20px;
+  color: white;
   border: none;
+ 
 }
 
 
 .copy_botom.copied{
  
   background: var(--color_secundario);
-
+border: none;
 }
 

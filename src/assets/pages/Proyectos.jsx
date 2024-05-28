@@ -22,9 +22,9 @@ export default function Error() {
 <h1 className='Titulo__Page'>Proyectos</h1>
 <div className='informacion__general'>
 
-<div className='Parte'><span>Proyectos: 4 </span></div>
-<div className='Parte'><span>En desarrollo: 2</span></div>
-<div className='Parte'><span>Colavorativos: 1</span></div>
+<div className='Parte' data-id="1"><span>Proyectos: 4 </span></div>
+<div className='Parte 'data-id="2"><span>En desarrollo: 2</span></div>
+<div className='Parte'data-id="3"><span>Colavorativos: 1</span></div>
 
 
 </div>
@@ -75,7 +75,7 @@ export default function Error() {
               />
  <div className="proyecto__informacion">
 
-  <div className="proyecto__version">Version 1.0</div>
+  <div className="proyecto__version"><span>Version 1.0</span></div>
               <div className="proyecto__lenguajes">
                 <i className="fa-brands fa-python"></i>
                 
@@ -85,7 +85,7 @@ export default function Error() {
 
             <ProyectoCard
               titulo="SafeBox"
-              descripcion="aplicación Windows en desarrollo para almacenar y gestionar archivos como PDF, Word, fotos, y códigos de forma segura."
+              descripcion="Aplicación Windows en desarrollo para almacenar y gestionar archivos como PDF, Word, fotos, y códigos de forma segura."
               texto_url1="Codigo"
               url1="https://github.com/revay3d/SafeBox"
               codigo={true}
@@ -101,7 +101,7 @@ export default function Error() {
               />
 
             <div className="proyecto__informacion">
-            <div className="proyecto__version">Version 1.2</div>
+            <div className="proyecto__version"><span>Version 1.2</span></div>
             <div className="proyecto__lenguajes">
 
               <i className="fa-brands fa-python"></i>

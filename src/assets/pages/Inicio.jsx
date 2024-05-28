@@ -132,7 +132,7 @@ titulo="PROYECTOS"
               />
  <div className="proyecto__informacion">
 
-  <div className="proyecto__version">Version 1.0</div>
+  <div className="proyecto__version"><span>Version 1.0</span></div>
               <div className="proyecto__lenguajes">
                 <i className="fa-brands fa-python"></i>
                 
@@ -142,7 +142,7 @@ titulo="PROYECTOS"
 
             <ProyectoCard
               titulo="SafeBox"
-              descripcion="aplicación Windows en desarrollo para almacenar y gestionar archivos como PDF, Word, fotos, y códigos de forma segura."
+              descripcion="Aplicación Windows en desarrollo para almacenar y gestionar archivos como PDF, Word, fotos, y códigos de forma segura."
               texto_url1="Codigo"
               url1="https://github.com/revay3d/SafeBox"
               codigo={true}
@@ -158,7 +158,7 @@ titulo="PROYECTOS"
               />
 
             <div className="proyecto__informacion">
-            <div className="proyecto__version">Version 1.2</div>
+            <div className="proyecto__version"><span>Version 1.2</span></div>
             <div className="proyecto__lenguajes">
 
               <i className="fa-brands fa-python"></i>
