@@ -99,11 +99,11 @@ export default function Footer() {
           />
 
           <label className="formulario__texto" htmlFor="coments">
-            Mensage
+            Mensaje
           </label>
           <textarea
             className="formulario__celda"
-            placeholder="Mensage"
+            placeholder="Mensaje"
             id="coments"
             name="message"
             required

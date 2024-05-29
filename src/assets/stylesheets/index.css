@@ -27,6 +27,7 @@
   --color_primario: rgb(0, 119, 255);
   --color_terciario: #6857ff;
   --color_gradiente: linear-gradient(77deg, rgb(0, 26, 255), rgb(255, 0, 157));
+  --color_gradiente2: linear-gradient(77deg, rgb(0, 26, 255), rgb(255, 0, 157), rgb(0, 217, 255), pink, rgb(255, 0, 43), rgb(119, 0, 255));
  --trasparenteBorroso: blur(10px);
  --trasition: all 0.3s
 

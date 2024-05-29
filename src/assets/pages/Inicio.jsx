@@ -40,13 +40,15 @@ export default function Inicio() {
        
         <div className="header__text">
         
-          <p>¡Hola mundo! </p>
-          <p>
+          <p className="text__hola">¡Hola mundo! </p>
+          <p className="text_all">
             Soy <samp className="text__name"> RevayDev</samp>
           </p>
 
           <span className="text__job">Front-End Developer.</span>
           <div className="links">
+          <CorreoCopy initialEmail= "revaydev17@gmail.com" />
+
           <div className="text__links">
           <a href="https://discord.com/users/1066481602403766313" target="_blank">  <i className="fa-brands fa-discord"></i> </a>
            <a href="https://www.youtube.com/channel/UCE7NWSOlaZ4IOXfIuBip_kQ" target="_blank"> <i className="fa-brands fa-youtube"></i> </a>
@@ -54,7 +56,7 @@ export default function Inicio() {
         
         
           </div>
-          <CorreoCopy initialEmail= "revaydev17@gmail.com" />
+        
           </div>
         </div>
         <span className="flash flash--normal"></span>
@@ -64,12 +66,12 @@ export default function Inicio() {
       
 
       <div className={`aviso ${scroll ? "ocultar" : " "} `}>
-        <i className="fa-solid fa-arrow-down"></i>
+    <NavHashLink to="/#sobre_mi"><i className="fa-solid fa-arrow-down"></i></NavHashLink>
       </div>
       <main>
         <div className="contenedor">
           <section className="main__sobre_mi" id="sobre_mi">
-            <h2 className="sobre_mi__title">Sobre Mi</h2>
+            <h2 className="sobre_mi__title">Sobre mi</h2>
             <p className="sobre_mi__text">
               RevayDev es un seudonimo es decir un nombre artistico. mi nombre
               es <span className="Resaltar">Roberto Jimenez</span> y tengo 16
@@ -337,7 +339,9 @@ url2="https://github.com/"
      <SeccionExtra titulo="Contáctame" descripcion="¿Quieres contactarme? Estoy listo para hacer un proyecto grande y moderno." />
 
 <div className="caja_contacto">
+<CorreoCopy initialEmail= "revaydev17@gmail.com" />
      <div class="footer__links">
+      
               <div>
                 <a
                   href="https://discord.com/users/1066481602403766313"
@@ -359,7 +363,7 @@ url2="https://github.com/"
               </div>
       
       </div>
-     <CorreoCopy initialEmail= "revaydev17@gmail.com" />
+
 
      </div>
    
