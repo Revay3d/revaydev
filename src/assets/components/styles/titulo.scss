@@ -1,0 +1,20 @@
+
+.caja{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    margin: 100px auto 0;
+  display: inline-block;
+  font-size: 60px;
+  color: transparent;
+  background: var(--color_gradiente);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+

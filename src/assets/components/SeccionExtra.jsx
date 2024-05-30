@@ -1,4 +1,5 @@
 import React from 'react'
+import "./styles/seccionExtra.scss";
 
 export default function SeccionExtra(props) {
   return (

@@ -1,5 +1,7 @@
 import React from "react";
 import Icono from "./Icono";
+import "./styles/footer.scss";
+import "../stylesheets/Formulario.scss";
 
 export default function Footer() {
   return (

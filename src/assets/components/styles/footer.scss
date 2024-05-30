@@ -1,0 +1,135 @@
+/* pie de pagina o footer  */
+
+.footer__informacion{
+    line-height: 2.5rem;
+    align-items: center;
+  text-align: center;
+    justify-content: center;
+  }
+  .footer {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+  margin-top: 200px;
+  gap: 10px;
+  background-color: var(--fondo_costraste);
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 30px 0;
+  
+  .icon{
+    font-size: 40px;
+    background: none;
+    margin: 0;
+    width: 0;
+  }
+  
+  .tegnoligias__lenguajes{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    gap: 25px;
+  }
+  
+  }
+  
+  
+  .footer__texto {
+    
+  font-size: 20px;
+  color: #cecece;
+  margin-bottom: 25px;
+  }
+  .footer__links {
+    margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  
+  }
+  
+  .footer__links i {
+  transition: 0.5s;
+  width: 20px;
+  min-height: 20px;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 10px;
+  
+  
+  }
+  
+  .footer__links i:hover {
+  color: var(--color_primario);
+  border-color: var(--color_primario);
+  }
+  
+  
+  
+  .footer__links{
+  
+    display: flex;
+    flex-direction: column;
+  
+   a{
+   
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  
+    
+   }
+  
+   
+  
+    div{
+      display: flex;
+      gap: 15px;
+    }
+  }
+
+  
+.footer_parte1{
+  gap: 20px;
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+.footer__derechos{
+  font-size: 20px;
+  color: var(--mini_letra);
+  position: absolute;
+  bottom: 10px;
+  left: 70px;
+}
+
+.footer__tegnoligias{
+  padding: 40px;
+  width: 300px;
+  margin: 10px;
+  border-radius: 60px 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  background-color: var(--fondo_contraste2);
+  .tegnoligias__title{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+
+}

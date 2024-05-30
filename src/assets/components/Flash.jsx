@@ -1,4 +1,5 @@
 import React from 'react'
+import "./styles/flash.scss";
 
 export default function Flash(props) {
   return (

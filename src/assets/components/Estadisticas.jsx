@@ -1,4 +1,5 @@
 import React from 'react'
+import "./styles/Estadisticas.scss";
 
 export default function Estadisticas(props) {
   return (

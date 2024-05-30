@@ -1,4 +1,5 @@
 import React from 'react'
+import "./styles/consejosCart.scss";
 
 export default function ConsejosCart(props) {
   return (

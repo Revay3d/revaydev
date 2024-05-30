@@ -1,4 +1,5 @@
 import React from 'react'
+import "./styles/historia.scss";
 
 export default function Historia(props) {
   return (

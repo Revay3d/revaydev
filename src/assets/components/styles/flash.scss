@@ -1,0 +1,30 @@
+.flash{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    animation: flash  2s  infinite alternate;
+    filter: blur(160px);
+    content: "";
+    z-index: 30;
+    }
+    .flash--normal{
+      background-color: var(--color_primario);
+    }
+    
+    .flash--error {
+      inset: 0;
+    background-color: rgba(255, 0, 0, 0.815);
+    }
+    @keyframes flash {
+       to{
+        opacity: 0.8;
+    
+    
+       }
+       from{
+        opacity: 0.4;
+      
+       }
+    }
+    

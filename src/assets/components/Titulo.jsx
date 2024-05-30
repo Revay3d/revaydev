@@ -1,4 +1,5 @@
 import React from 'react'
+import "./styles/titulo.scss";
 
 export default function Titulo(props) {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "./styles/proyectoCard.scss";
 export default function ProyectoCard(props) {
   return (
   

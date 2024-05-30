@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import '../stylesheets/App.scss'; 
+import "./styles/correoCopy.scss";
 
 const EmailForm = ({ initialEmail }) => {
   const inputRef = useRef(null);
